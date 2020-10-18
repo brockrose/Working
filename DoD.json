@@ -1,0 +1,128 @@
+{
+ "name": "Department of Defense (DoD)",
+ "children": [
+  {
+   "name": "Office of the Secretary of Defense (OSD)",
+   "children": [
+    {
+     "name": "Deputy Secretary of Defense (SECDEF)",
+     "children": [
+      {"name": "Deputy's Advisory Working Group", "value": 3938},
+      {"name": "Office of Net Assessment", "value": 3812},
+      {"name": "Special Access Program Oversight Committee", "value": 6714}
+     ]
+    },
+    {
+     "name": "Under Secretary of Defense for Acquisition and Sustainment (OUSD (A&S))",
+     "children": [
+      {"name": "Defense Contract Management Agency", "value": 3534},
+      {"name": "Defense Logistics Agency", "value": 5731},
+      {"name": "Defense Threat Reduction Agency", "value": 7840},
+      {"name": "Office of Economic Adjustment", "value": 5914},
+      {"name": "Defense Acquistion University", "value": 3416},
+	  {"name": "Defense Acquistion Board", "value": 743}
+     ]
+    },
+    {
+     "name": "Under Secretary of Defense for Research and Engineering (OUSD (R&E))",
+     "children": [
+      {"name": "Defense Advanced Research Projects Agency (DARPA)", "value": 7074},
+	  {"name": "Defense Innovation Unit", "value": 7075},
+	  {"name": "Defense Microelectronics Activity", "value": 7076},
+	  {"name": "Missile Defense Agency (MDA)", "value": 7078},
+	  {"name": "Space Development Agency (SDA)", "value": 7079}
+     ]
+    },
+	{
+	 "name": "Under Secretary of Defense for Policy (OUSD(P))"
+    },
+	{
+     "name": "Under Secretary of Defense Comptroller (OUSD(C))"
+    },
+	{
+     "name": "Under Secretary of Defense Intel & Security (OUSD(I&S))",
+     "children": [
+      {"name": "Defense Intelligence Agency (DIA)", "value": 7074},
+	  {"name": "Defense Counterintelligence and Security Agency (DCSA)", "value": 7075},
+	  {"name": "Defense Information Systems Agency", "value": 7076},
+	  {"name": "National Geospatial-Intelligence Agency(NGIA)", "value": 7078},
+	  {"name": "National Reconnaissance Office (NRO)", "value": 7079},
+	  {"name": "National Security Agency/Central Security Service (NSA/CSS)", "value": 7080}
+     ]
+    },
+	{
+     "name": "Office of Secretary of Defense Operational Test & Eval (OSD (OT&E))"
+    },
+	{
+     "name": "Office of Secretary of Defense Cost Assessment & Program Evaluation (OSD (CAPE))"
+    },
+	{
+     "name": "Office of Secretary of Defense Chief Information Officer (OSD (CIO)",
+     "children": [
+      {"name": "Joint Artificial Intelligence Center (JAIC)", "value": 7074},
+	  {"name": "C4 & Info Infrastructure Capabilities CIO(C4&IIC)", "value": 7075},
+	  {"name": "Cybersecurity & Security CIO(CS)", "value": 7076},
+	  {"name": "Info Enterprise", "value": 7078}
+     ]
+    },
+    {
+     "name": "Office of Secretary of Defense Protecting Critical Tech Task Force (OSD (PCTTF))"
+    },
+    {
+     "name": "Chairman of the Joint Chiefs of Staff (CJCS)",
+     "children": [
+      {"name": "Vice Chairman of the Joint Chief of Staff (VCJCS)", "value": 7074},
+	  {"name": "Director of the Joint Staff (DJS)", "value": 7075},
+	  {"name": "Joint Staff J2", "value": 7076},
+	  {"name": "Joint Staff J3", "value": 7076},
+	  {"name": "Joint Staff J5", "value": 7076},
+      {"name": "Joint Staff J6", "value": 7076},
+	  {"name": "Joint Staff J7", "value": 7076},
+	  {"name": "Joint Staff J8", "value": 7076},
+	  {"name": "Joint Requirements Oversight Council (JROC)", "value": 7078}
+     ]
+    },
+	{
+     "name": "Combatant Commands",
+     "children": [
+      {"name": "Africa Command", "value": 7074},
+	  {"name": "Central Command", "value": 7075},
+	  {"name": "European Command", "value": 7076},
+	  {"name": "Northern Command", "value": 7076},
+	  {"name": "Indo-Pacific Command", "value": 7076},
+      {"name": "Southern Command", "value": 7076},
+	  {"name": "Space Command", "value": 7076},
+	  {"name": "Cyber Command", "value": 7076},
+	  {"name": "Special Operations Command", "value": 7078},
+	  {"name": "Strategic Command", "value": 7078},
+	  {"name": "Transportation Command", "value": 7078}
+     ]
+    },
+    {
+     "name": "Military Departments",
+     "children": [
+	  {"name": "Department of the Air Force",
+        "children": [
+         {"name": "Secretary of the Air Force", "value": 721},
+         {"name": "US Air Force (USAF)", "value": 4294},
+         {"name": "US Space Force (USSF)", "value": 9800},
+         {"name": "IDataConverter", "value": 1314},
+         {"name": "JSONConverter", "value": 2220}
+        ]
+      },
+	  {"name": "Department of the Army", "value": 7075},
+	  {"name": "Department of the Navy", "value": 7076}
+     ]
+    },
+	{
+     "name": "National Guard Bureau",
+     "children": [
+      {"name": "Chief of National Guard Bureau", "value": 7074},
+	  {"name": "Air National Guard", "value": 7075},
+	  {"name": "Army National Guard", "value": 7076}
+     ]
+    }
+   ]
+  }
+ ]
+}
