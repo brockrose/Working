@@ -26,7 +26,17 @@
     {
      "name": "Under Secretary of Defense for Research and Engineering (OUSD (R&E))",
      "children": [
-      {"name": "Defense Advanced Research Projects Agency (DARPA)", "value": 7074},
+      {"name": "Defense Advanced Research Projects Agency (DARPA)",
+	   "children": [
+        {"name": "Special Projects Office (ACO)", "value": 721},
+        {"name": "Defense Sciences Office (DSO)", "value": 4294},
+        {"name": "Information Innovation Office (I2O)", "value": 9800},
+        {"name": "Biological Technologies Office (BTO)", "value": 1314},
+        {"name": "Microsystems Technology Office (MTO)", "value": 2220},
+		{"name": "Strategic Technology Office (STO)", "value": 2220},
+		{"name": "Tactical Technology Office (TTO)", "value": 2220}
+       ]
+      },
 	  {"name": "Defense Innovation Unit", "value": 7075},
 	  {"name": "Defense Microelectronics Activity", "value": 7076},
 	  {"name": "Missile Defense Agency (MDA)", "value": 7078},
