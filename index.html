@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+#container {
+    position: relative;
+}
+
+#scroll-container {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#minimap {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: crosshair;
+}
+
+.slider-rect {
+    fill: #000;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+#minimap:active .slider-rect {
+    opacity: 0.05;
+    cursor: move;
+}
+
+.node circle {
+    fill: #999;
+    cursor: pointer;
+}
+
+.node text {
+    font: 10px sans-serif;
+    text-anchor: start;
+}
+
+.node--internal circle {
+    fill: #555;
+}
+
+.node--internal text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+    text-anchor: end;
+}
+
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.4;
+    stroke-width: 1.5px;
+}
+
+</style>
+<div id="container">
+    <div id="scroll-container"><svg></svg></div>
+    <div id="minimap"><svg></svg></div>
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var scrollContainer = document.getElementById('scroll-container'),
+    width = 960 - 130, // width - minimap width
+    height = 2000,
+    scrollHeight = 500,
+    minimapK = 6,
+    root;
+
+var drag = d3.drag()
+    .on('start drag', function() { 
+        scrollContainer.scrollTop = d3.event.y * minimapK - scrollHeight / 2;
+    });
+
+var svg0 = d3.select(scrollContainer)
+    .on('scroll', function(d) {
+        slider.attr('y', this.scrollTop);
+    })
+    .select('svg')
+    .attr('viewBox', [0, 0, width, height].join(' '))
+    .attr('width', width)
+    .attr('height', height);
+
+svg0.append('g').attr('transform', 'translate(40,0)');
+
+var svg1 = d3.select('#minimap > svg')
+    .attr('viewBox', [0, 0, width, height].join(' '))
+    .attr('preserveAspectRatio', 'xMidYMid meet')
+    .attr('width', width / minimapK)
+    .attr('height', height / minimapK)
+    .call(drag);
+
+svg1.append('g').attr('transform', 'translate(40,0)');
+
+var slider = svg1.append('rect')
+    .attr('class', 'slider-rect')
+    .attr('width', width)
+    .attr('height', scrollHeight);
+
+
+d3.csv("flare.csv", function(error, data) {
+    if (error) throw error;
+
+    var stratify = d3.stratify().parentId(function (d) {
+        return d.id.substring(0, d.id.lastIndexOf("."));
+    });
+
+    root = stratify(data).sort(function (a, b) {
+        return (a.height - b.height) || a.id.localeCompare(b.id);
+    });
+
+    updateAll();
+});
+
+function updateAll(){
+    update(svg0);
+    update(svg1);
+}
+
+function update(svg) {
+    var g = svg.select('g');
+
+    var tree = d3.tree()
+        .size([height, width - 160]);
+
+    var enterTransition = d3.transition().duration(500).delay(750);
+    var updateTransition = d3.transition().duration(1000);
+    var exitTransition = d3.transition().duration(500);
+
+    var linkHorizontal = d3.linkHorizontal()
+        .x(function (d) { return d.y; })
+        .y(function (d) { return d.x; });
+
+    var link = g.selectAll('.link')
+        .data(tree(root).links(), function(d) { return d.source.id + '-' + d.target.id; });
+
+    link.transition(updateTransition)
+        .attr('d', linkHorizontal);
+    
+    link.enter().append('path')
+        .attr('class', 'link')
+        .attr('d', linkHorizontal)
+        .attr('opacity', 0)
+        .transition(enterTransition)
+        .attr('opacity', 1);
+
+    link.exit()
+        .transition(exitTransition)
+        .attr('opacity', 0)
+        .remove();
+
+    var node = g.selectAll('.node')
+        .data(root.descendants(), function(d) { return d.id; });
+
+    node.transition(updateTransition)
+        .attr('class', function (d) {
+            return 'node ' + (d.children ? 'node--internal' : 'node--leaf');
+        })
+        .attr('transform', function (d) {
+            return 'translate(' + d.y + ',' + d.x + ')';
+        })
+        .each(function(d) {
+            var nodeGroup = d3.select(this);
+            nodeGroup.select('text')
+                .attr('x', d.children ? -8 : 8)
+                .text(d.id.substring(d.id.lastIndexOf('.') + 1));
+        });
+    
+    node.enter().append('g')
+        .each(function(d) {
+            var nodeGroup = d3.select(this);
+            nodeGroup.append('circle')
+                .attr('r', 2.5)
+                .on('click', onClick);
+            nodeGroup.append('text')
+                .attr('dy', 3)
+                .attr('x', d.children ? -8 : 8)
+                .text(d.id.substring(d.id.lastIndexOf('.') + 1));
+        })
+        .attr('class', function (d) {
+            return 'node ' + (d.children ? 'node--internal' : 'node--leaf');
+        })
+        .attr('transform', function (d) {
+            return 'translate(' + d.y + ',' + d.x + ')';
+        })
+        .attr('opacity', 0)
+        .transition(enterTransition)
+        .attr('opacity', 1);
+
+    node.exit()
+        .transition(exitTransition)
+        .attr('opacity', 0)
+        .remove();
+}
+
+function onClick(d) {
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+    } else {
+        d.children = d._children;
+        d._children = null;
+    }
+    updateAll();
+}
+
+</script>
