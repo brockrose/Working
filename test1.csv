@@ -1,0 +1,549 @@
+name,parent
+Department of Defense (DoD),
+Chairman of the Joint Chiefs of Staff (CJCS),Department of Defense (DoD)
+Chief Information Officer (CIO),Department of Defense (DoD)
+Combatant Commands (COCOMs),Department of Defense (DoD)
+Cost Assessment and Program Evaluation (CAPE) Office,Department of Defense (DoD)
+Defense Advanced Research Projects Agency (DARPA),Department of Defense (DoD)
+Defense Counterintelligence and Security Agency (DCSA),Department of Defense (DoD)
+Defense Digital Service (DDS),Department of Defense (DoD)
+Defense Health Agency (DHA),Department of Defense (DoD)
+Defense Information Systems Agency (DISA),Department of Defense (DoD)
+Defense Innovation Board,Department of Defense (DoD)
+Defense Innovation Unit (DIU),Department of Defense (DoD)
+Defense Intelligence Agency (DIA),Department of Defense (DoD)
+Defense Logistics Agency (DLA),Department of Defense (DoD)
+Defense Security Cooperation University,Department of Defense (DoD)
+Defense Threat Reduction Agency (DTRA),Department of Defense (DoD)
+Department of Defense Inspector General (DoDIG),Department of Defense (DoD)
+Department of the Air Force (DoAF),Department of Defense (DoD)
+Department of the Army (DoA),Department of Defense (DoD)
+Department of the Navy (DoN),Department of Defense (DoD)
+DoD Chief Management Office,Department of Defense (DoD)
+Electromagnetic Spectrum Operations Cross Functional Team,Department of Defense (DoD)
+Joint Electronic Warfare Center,Department of Defense (DoD)
+Missile Defense Agency (MDA),Department of Defense (DoD)
+National Geospatial Intelligence Agency (NGA),Department of Defense (DoD)
+"Office of the Director, Operational Test and Evaluation (ODOT&E)",Department of Defense (DoD)
+Office of the Secretary of Defense (OSD),Department of Defense (DoD)
+Space Acquisition Council,Department of Defense (DoD)
+J8,Chairman of the Joint Chiefs of Staff (CJCS)
+National Guard Bureau (NGB),Chairman of the Joint Chiefs of Staff (CJCS)
+Vice Chairman of the Joint Chiefs of Staff,Chairman of the Joint Chiefs of Staff (CJCS)
+Joint All-Domain Command and Control (JADC2) Cross Functional Team (CFT),Chief Information Officer (CIO)
+Joint Artificial Intelligence Center (JAIC),Chief Information Officer (CIO)
+Africa Command (AFRICOM),Combatant Commands (COCOMs)
+Central Command (CENTCOM),Combatant Commands (COCOMs)
+Cyber Command (CYBERCOM),Combatant Commands (COCOMs)
+European Command (EUCOM),Combatant Commands (COCOMs)
+Indo-Pacific Command (INDOPACOM),Combatant Commands (COCOMs)
+Northern Command (NORTHCOM),Combatant Commands (COCOMs)
+Southern Command (SOUTHCOM),Combatant Commands (COCOMs)
+Space Command (SPACECOM),Combatant Commands (COCOMs)
+Special Operations Command (SOCOM),Combatant Commands (COCOMs)
+Strategic Command (STRATCOM),Combatant Commands (COCOMs)
+Transportation Command (TRANSCOM),Combatant Commands (COCOMs)
+Defense Sciences Office (DSO),Defense Advanced Research Projects Agency (DARPA)
+Information Innovation Office (I2O),Defense Advanced Research Projects Agency (DARPA)
+LogX,Defense Advanced Research Projects Agency (DARPA)
+Microsystems Technology Office (MTO),Defense Advanced Research Projects Agency (DARPA)
+Emerging Technology Directorate,Defense Information Systems Agency (DISA)
+Secure Access File Exchange (SAFE),Defense Information Systems Agency (DISA)
+National Security Innovation Network (NSIN),Defense Innovation Unit (DIU)
+Helios,Defense Intelligence Agency (DIA)
+Machine-Assisted Analytic Rapid-Repository System (MARS),Defense Intelligence Agency (DIA)
+Air Force Chief of Staff,Department of the Air Force (DoAF)
+Secretary of the Air Force (SECAF),Department of the Air Force (DoAF)
+Secretary of the Army / U.S. Army (USA),Department of the Army (DoA)
+Office of the Commandant of the Marine Corps (CMC Office) / U.S. Marine Corps (USMC),Department of the Navy (DoN)
+Secretary of the Navy (SECNAV) / U.S. Navy (USN),Department of the Navy (DoN)
+Office of the Undersecretary for Personnel and Readiness - OUSD(P&R),Office of the Secretary of Defense (OSD)
+Office of the Undersecretary of Defense (Comptroller),Office of the Secretary of Defense (OSD)
+Office of the Undersecretary of Defense for Acquisition and Sustainment - OUSD(A&S),Office of the Secretary of Defense (OSD)
+"Office of the Undersecretary of Defense for Nuclear, Chemical, and Biological Defense Programs",Office of the Secretary of Defense (OSD)
+Office of the Undersecretary of Defense for Policy - OUSD(P),Office of the Secretary of Defense (OSD)
+Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E),Office of the Secretary of Defense (OSD)
+Joint Integrated Air and Missile Defense Organization (JIAMDO),J8
+U.S. Air National Guard (ANG),National Guard Bureau (NGB)
+U.S. Army National Guard,National Guard Bureau (NGB)
+Project Convergence,Joint All-Domain Command and Control (JADC2) Cross Functional Team (CFT)
+Cyberspace National Mission Initiative (NMI),Joint Artificial Intelligence Center (JAIC)
+Department of Defense AI Steering Committee,Joint Artificial Intelligence Center (JAIC)
+Joint Logistics Mission Initiative,Joint Artificial Intelligence Center (JAIC)
+Joint Warfighting Initiative,Joint Artificial Intelligence Center (JAIC)
+Joint Cyber Command and Control (JCC2),Cyber Command (CYBERCOM)
+Joint Cyber Warfighting Architecture,Cyber Command (CYBERCOM)
+Naval Surface Forces Pacific (NAVSURFPAC),Indo-Pacific Command (INDOPACOM)
+North American Aerospace Defense Command (NORAD),Northern Command (NORTHCOM)
+U.S. Fleet Forces Command (USFF),Northern Command (NORTHCOM)
+Combined Force Space Component Command (CFSCC),Space Command (SPACECOM)
+Joint Task Force Space Defense (JTF-SD),Space Command (SPACECOM)
+National Reconnaissance Office (NRO),Space Command (SPACECOM)
+Armed Overwatch,Special Operations Command (SOCOM)
+Hyper Enabled Operator (HEO),Special Operations Command (SOCOM)
+Next Generation Armored Ground Mobility System (AGMS),Special Operations Command (SOCOM)
+PEO SOF Digital Applications,Special Operations Command (SOCOM)
+"Program Executive Officer for Special Reconnaissance, Surveillance, and Exploitation (PEO-SRSE)",Special Operations Command (SOCOM)
+SOFWERX,Special Operations Command (SOCOM)
+Army Forces Strategic Command (ARSTART),Strategic Command (STRATCOM)
+Joint Electromagnetic Preparedness for Advanced Combat,Strategic Command (STRATCOM)
+Joint Electronic Warfare Center,Strategic Command (STRATCOM)
+Joint Force Space Component Command (JFSCC),Strategic Command (STRATCOM)
+NC3 Enterprise Center (NEC),Strategic Command (STRATCOM)
+Air Force Rapid Capabilities Office (RCO),Secretary of the Air Force (SECAF)
+"Assistant Secretary of the Air Force for Acquisition, Technology and Logistics (SAF/AQ)",Secretary of the Air Force (SECAF)
+Space Acquisition & Integration (SAF/SP),Secretary of the Air Force (SECAF)
+U.S. Air Force (USAF),Secretary of the Air Force (SECAF)
+U.S. Space Force (USSF),Secretary of the Air Force (SECAF)
+"Assistant Secretary of the Army (Acquisition, Logistics and Technology) - ASA(ALT)",Secretary of the Army / U.S. Army (USA)
+"Headquarters, Department of the Army",Secretary of the Army / U.S. Army (USA)
+Expeditionary Advanced Base Operations,Office of the Commandant of the Marine Corps (CMC Office) / U.S. Marine Corps (USMC)
+Marine Corps Combat Development Command (MCCDC),Office of the Commandant of the Marine Corps (CMC Office) / U.S. Marine Corps (USMC)
+Marine Corps Systems Command (MARCOR SYSCOM),Office of the Commandant of the Marine Corps (CMC Office) / U.S. Marine Corps (USMC)
+"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)",Secretary of the Navy (SECNAV) / U.S. Navy (USN)
+Office of the Chief of Naval Operations (OPNAV / CNO Office),Secretary of the Navy (SECNAV) / U.S. Navy (USN)
+Assistant Secretary of Defense for Readiness,Office of the Undersecretary for Personnel and Readiness - OUSD(P&R)
+Joint Acquisition Task Force,Office of the Undersecretary of Defense for Acquisition and Sustainment - OUSD(A&S)
+Joint Requirements Oversight Council (JROC),Office of the Undersecretary of Defense for Acquisition and Sustainment - OUSD(A&S)
+Office of Manufacturing and Industrial Base Policy (MIBP),Office of the Undersecretary of Defense for Acquisition and Sustainment - OUSD(A&S)
+"Assistant Secretary of Defense for Nuclear, Chemical, and Biological Defense Programs","Office of the Undersecretary of Defense for Nuclear, Chemical, and Biological Defense Programs"
+Assistant Secretary of Defense for Special Operations / Low-Intensity Conflict,Office of the Undersecretary of Defense for Policy - OUSD(P)
+Defense Security Cooperation Agency (DSCA),Office of the Undersecretary of Defense for Policy - OUSD(P)
+"Assistant Director for Fully Networked Command, Control, and Communications (AD, FNC3)",Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E)
+Department of Defense Information Analysis Center (DoD IAC),Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E)
+Department of Defense Research and Engineering (DDR&E),Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E)
+Directorate for Advanced Capabilities,Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E)
+Office of the Assistant Secretary of Defense for Research and Engineering - OASD(R&E),Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E)
+Strategic Capabilities Office (SCO),Office of the Undersecretary of Defense for Research and Engineering - OUSD(R&E)
+Surface and Mine Warfighting Development Center (SMWDC),Naval Surface Forces Pacific (NAVSURFPAC)
+Surface Development Squadron 1 (SURFDEVRON-1),Naval Surface Forces Pacific (NAVSURFPAC)
+Advanced Systems and Technology (AS&T) Directorate,National Reconnaissance Office (NRO)
+Rapid Acquisition of a Small Rocket (RASR),National Reconnaissance Office (NRO)
+Mission Command,PEO SOF Digital Applications
+Program Manager for Joint Threat Warning Systems (PM-JTWS),"Program Executive Officer for Special Reconnaissance, Surveillance, and Exploitation (PEO-SRSE)"
+U.S. Army Space and Missile Defense Command (USASMDC),Army Forces Strategic Command (ARSTART)
+Combined Space Operations Center (CSpOC),Joint Force Space Component Command (JFSCC)
+Air Force Rapid Sustainment Office (RSO),"Assistant Secretary of the Air Force for Acquisition, Technology and Logistics (SAF/AQ)"
+Program Executive Office for Combat and Mission Support (PEO/CM),"Assistant Secretary of the Air Force for Acquisition, Technology and Logistics (SAF/AQ)"
+Special Operation Forces Directorate,"Assistant Secretary of the Air Force for Acquisition, Technology and Logistics (SAF/AQ)"
+Space Development Agency (SDA),Space Acquisition & Integration (SAF/SP)
+Space Rapid Capabilities Office (Space RCO),Space Acquisition & Integration (SAF/SP)
+Air Force Space Command (AFSPC),U.S. Air Force (USAF)
+National Air and Space Intelligence Center (NASIC),U.S. Air Force (USAF)
+Office of the Chief of Staff of the Air Force (CSAF),U.S. Air Force (USAF)
+Vice Chief of Staff of the Air Force (HAF/CV),U.S. Air Force (USAF)
+Office of the Chief of Space Operations (OCSO),U.S. Space Force (USSF)
+Space and Missile Systems Center (SMC),U.S. Space Force (USSF)
+Space Force Acquisition Council,U.S. Space Force (USSF)
+Army Acquisition Support Center (USAASC),"Assistant Secretary of the Army (Acquisition, Logistics and Technology) - ASA(ALT)"
+Rapid Capabilities and Critical Technologies Office (RCCTO),"Assistant Secretary of the Army (Acquisition, Logistics and Technology) - ASA(ALT)"
+Army Corps of Engineers (USACE),"Headquarters, Department of the Army"
+Army Futures Command (AFC),"Headquarters, Department of the Army"
+Army Materiel Command (AMC),"Headquarters, Department of the Army"
+Forces Command (FORSCOM),"Headquarters, Department of the Army"
+Office of the U.S. Army Deputy Chief of Staff G-8,"Headquarters, Department of the Army"
+Training and Doctrine Command (TRADOC),"Headquarters, Department of the Army"
+Marine Corps Warfighting Lab,Marine Corps Combat Development Command (MCCDC)
+Training and Education Command (TECOM),Marine Corps Combat Development Command (MCCDC)
+Marine Corps Tactical Systems Support Activity (MCTSSA),Marine Corps Systems Command (MARCOR SYSCOM)
+Portfolio Manager Command Element Systems (PfM CES),Marine Corps Systems Command (MARCOR SYSCOM)
+Portfolio Manager Ground Combat Element Systems (PfM GCES),Marine Corps Systems Command (MARCOR SYSCOM)
+Portfolio Manager Logistics Combat Element Systems (PfM LCES),Marine Corps Systems Command (MARCOR SYSCOM)
+Portfolio Manager Supporting Establishment Systems (PfM SES),Marine Corps Systems Command (MARCOR SYSCOM)
+Program Manager for Light Armored Vehicles (PM LAV) / Light Armored Vehicles (PM 120),Marine Corps Systems Command (MARCOR SYSCOM)
+Program Manager Training Systems (PM TRASYS) / Training Systems (PMM-130),Marine Corps Systems Command (MARCOR SYSCOM)
+USMC Counter-Unmanned Aircraft System (C-UAS),Marine Corps Systems Command (MARCOR SYSCOM)
+Military Sealift Command (MSC),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Naval Expeditions (NavalX) Agility Office,"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Office of Naval Research (ONR),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)","Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Aircraft Carriers (PEO CV),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Columbia (Columbia 397),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)","Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Digital and Enterprise Services (PEO Digital),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Enterprise Information Systems (PEO EIS),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Integrated Warfare Systems (PEO IWS),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Joint Strike Fighter (PEO JSF),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Land Systems (PEO LS),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Manpower Logistics and Business Solutions (PEO MLB),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Ships (PEO Ships),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Space Systems,"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Submarines (PEO SUB),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Tactical Aircraft Programs (PEO-T),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Unmanned and Small Combatants (PEO USC),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Strategic Systems Programs (SSP) Direct Reporting Program Manager (DRPM),"Assistant Secretary of the Navy for Research, Development & Acquisition - ASN(RD&A)"
+Naval Air Systems Command (NAVAIR),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Naval Education and Training Command (NETC),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Naval Facilities Engineering Command (NAVFAC),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Naval Information Forces (NAVIFOR),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Naval Information Warfare Systems Command (NAVWAR),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Naval Sea Systems Command (NAVSEA),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Naval Supply Systems Command (NAVSUP),Office of the Chief of Naval Operations (OPNAV / CNO Office)
+Close Combat Lethality Task Force,Assistant Secretary of Defense for Readiness
+Army Requirements Oversight Council (AROC),Joint Requirements Oversight Council (JROC)
+Combating Terrorism Technical Support Office (CTTSO),Assistant Secretary of Defense for Special Operations / Low-Intensity Conflict
+Joint Hypersonic Transition Office (JHTO),Directorate for Advanced Capabilities
+"Office of the Deputy Assistant Secretary of Defense, Emerging Capability & Prototyping - ODASD(EC&P)",Office of the Assistant Secretary of Defense for Research and Engineering - OASD(R&E)
+IMPACT program,Advanced Systems and Technology (AS&T) Directorate
+Air Force Security Assistance and Cooperation Directorate (AFSAC),Air Force Life Cycle Management Center (AFLCMC)
+"Program Directorate, Propulsion",Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Advanced Aircraft (PEO AA) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Agile Combat Support (PEO ACS) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Armament (PEO Armament) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Business and Enterprise Systems (PEO BES) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+"Program Executive Office Command, Control, Communications, Intelligence and Networks (PEO C3I&N)",Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Digital (PEO Digital) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office for ISR and Special Operations Forces (PEO ISR & SOF) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office for the Presidential and Executive Airlift Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Mobility and Training Aircraft (PEO Mobility) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Office Tankers (PEO Tankers) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Program Executive Officer for the Fighters and Bombers (PEO FB) Directorate,Air Force Life Cycle Management Center (AFLCMC)
+Ground-Based Strategic Deterrent (GBSD) Systems Directorate,Air Force Nuclear Weapons Center (AFNWC)
+Minuteman III Systems Directorate,Air Force Nuclear Weapons Center (AFNWC)
+Program Executive Office Strategic Systems (PEO S&S),Air Force Nuclear Weapons Center (AFNWC)
+Air Force Strategic Development Planning and Experimentation Office (AFSDPE),Air Force Research Laboratory (AFRL)
+Center for Rapid Innovation,Air Force Research Laboratory (AFRL)
+Infrared Radiation Effects Laboratory,Air Force Research Laboratory (AFRL)
+Strategic Development Planning and Experimentation Office,Air Force Research Laboratory (AFRL)
+PEO Space Systems,Space and Missile Systems Center (SMC)
+Space Enterprise Consortium (SpEC),Space and Missile Systems Center (SMC)
+Warfighter Council,Space Development Agency (SDA)
+Air Force Installation Contracting Center (AFICC),Air Force Materiel Command (AFMC)
+Air Force Life Cycle Management Center (AFLCMC),Air Force Materiel Command (AFMC)
+Air Force Nuclear Weapons Center (AFNWC),Air Force Materiel Command (AFMC)
+Air Force Research Laboratory (AFRL),Air Force Materiel Command (AFMC)
+Air Force Sustainment Center (AFSC),Air Force Materiel Command (AFMC)
+Air Force Test Center (AFTC),Air Force Materiel Command (AFMC)
+Combined Forces Space Component Command (CFSCC),Air Force Space Command (AFSPC)
+Joint Forces Space Component Command (JFSCC),Air Force Space Command (AFSPC)
+National Space Defense Center (NSDC),Air Force Space Command (AFSPC)
+Air Combat Command (ACC),Office of the Chief of Staff of the Air Force (CSAF)
+Air Education and Training Command (AETC),Office of the Chief of Staff of the Air Force (CSAF)
+Air Force Global Strike Command (AFGSC),Office of the Chief of Staff of the Air Force (CSAF)
+Air Force Materiel Command (AFMC),Office of the Chief of Staff of the Air Force (CSAF)
+Air Force Reserve Command (AFRC),Office of the Chief of Staff of the Air Force (CSAF)
+Air Force Special Operations Command (AFSOC),Office of the Chief of Staff of the Air Force (CSAF)
+Air Force Warfighting Integration Capability (AFWIC) Office,Office of the Chief of Staff of the Air Force (CSAF)
+Air Mobility Command (AMC),Office of the Chief of Staff of the Air Force (CSAF)
+Pacific Air Force (PACAF),Office of the Chief of Staff of the Air Force (CSAF)
+United States Air Forces in Europe   Air Forces Africa (USAFE-AFAFRICA),Office of the Chief of Staff of the Air Force (CSAF)
+Space Operations Command,Office of the Chief of Space Operations (OCSO)
+Joint Counter-Small Unmanned Aircraft Systems Office (C-sUAS),Army Acquisition Support Center (USAASC)
+Joint Program Executive Office Armaments & Ammunition (JPEO A&A),Army Acquisition Support Center (USAASC)
+"Joint Program Executive Office for Chemical, Biological, Radiological, Nuclear Defense (JPEO-CBRN)",Army Acquisition Support Center (USAASC)
+Program Executive Office Aviation (PEO Aviation),Army Acquisition Support Center (USAASC)
+Program Executive Office for Assembled Chemical Weapons Alternatives (PEO ACWA),Army Acquisition Support Center (USAASC)
+Program Executive Office for Combat Support & Combat Service Support (PEO CS&CSS),Army Acquisition Support Center (USAASC)
+"Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)",Army Acquisition Support Center (USAASC)
+Program Executive Office for Enterprise Information Systems (PEO EIS),Army Acquisition Support Center (USAASC)
+Program Executive Office for Ground Combat Systems (PEO GCS),Army Acquisition Support Center (USAASC)
+Program Executive Office for Missiles and Space (PEO MS),Army Acquisition Support Center (USAASC)
+Program Executive Office Soldier (PEO Soldier),Army Acquisition Support Center (USAASC)
+"Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)",Army Acquisition Support Center (USAASC)
+"Program Executive Officer for Simulation, Training and Instrumentation (PEO STRI)",Army Acquisition Support Center (USAASC)
+Army RCCTO Directed Energy Project Office,Rapid Capabilities and Critical Technologies Office (RCCTO)
+Army RCCTO Hypersonic Project Office,Rapid Capabilities and Critical Technologies Office (RCCTO)
+Army RCCTO Space Project Office,Rapid Capabilities and Critical Technologies Office (RCCTO)
+Engineering Research & Development Center (ERDC),Army Corps of Engineers (USACE)
+Army Applications Laboratory (AAL),Army Futures Command (AFC)
+Army Medical Research and Development Command (USAMRDC),Army Futures Command (AFC)
+Army Test and Evaluation Command (ATEC),Army Futures Command (AFC)
+Artificial Intelligence Task Force (AITF),Army Futures Command (AFC)
+Combat Capability Development Command (CCDC),Army Futures Command (AFC)
+Combat Systems Directorate (CSD),Army Futures Command (AFC)
+Cross-Functional Teams (CFTs),Army Futures Command (AFC)
+Futures and Concepts Center (FCC),Army Futures Command (AFC)
+Army Contracting Command (ACC),Army Materiel Command (AMC)
+Army Office of Business Transformation (OBT),Army Materiel Command (AMC)
+Army Security Assistance Command (USASAC),Army Materiel Command (AMC)
+Army Sustainment Command (ASC),Army Materiel Command (AMC)
+Aviation and Missile Command (AMCOM),Army Materiel Command (AMC)
+Communications and Electronics Command (CECOM),Army Materiel Command (AMC)
+Installation Management Command,Army Materiel Command (AMC)
+Joint Munitions Command / Joint Munitions & Lethality Life Cycle Management Command (JMC),Army Materiel Command (AMC)
+Medical Logistics Command,Army Materiel Command (AMC)
+Military Surface Deployment and Distribution Command (SDDC),Army Materiel Command (AMC)
+Tank-Automotive and Armaments Command (TACOM),Army Materiel Command (AMC)
+Army Cyber Command (ARCYBER),Forces Command (FORSCOM)
+Army Combined Arms Center (USACAC),Training and Doctrine Command (TRADOC)
+U.S. Army Aviation Center of Excellence (USAACE),Training and Doctrine Command (TRADOC)
+Marine Corps Rapid Capabilities Office (RCO),Marine Corps Warfighting Lab
+Amphibious Vehicle Test Branch (AVTB),Marine Corps Tactical Systems Support Activity (MCTSSA)
+Program Manager Command and Control Systems (PM C2),Portfolio Manager Command Element Systems (PfM CES)
+Program Manager Communication Systems (PM COMMS),Portfolio Manager Command Element Systems (PfM CES)
+Program Manager Intelligence Systems (PM INTEL),Portfolio Manager Command Element Systems (PfM CES)
+Program Manager Fires (PM FIRES),Portfolio Manager Ground Combat Element Systems (PfM GCES)
+Program Manager Infantry Combat Equipment (PM ICE),Portfolio Manager Ground Combat Element Systems (PfM GCES)
+Program Manager Infantry Weapons (PM IW),Portfolio Manager Ground Combat Element Systems (PfM GCES)
+Program Manager Ammunition (PM AMMO),Portfolio Manager Logistics Combat Element Systems (PfM LCES)
+Program Manager Engineering Systems (PM ENG SYS),Portfolio Manager Logistics Combat Element Systems (PfM LCES)
+Program Manager Supply & Maintenance Systems (PM SUP/MAINT SYS),Portfolio Manager Logistics Combat Element Systems (PfM LCES)
+Program Manager Applications (PM APPS),Portfolio Manager Supporting Establishment Systems (PfM SES)
+Program Manager Customer Support & Strategic Sourcing (PM CS3),Portfolio Manager Supporting Establishment Systems (PfM SES)
+Program Manager Marine Corps Cyber Ops (PM MC Cyber),Portfolio Manager Supporting Establishment Systems (PfM SES)
+Program Manager Network & Infrastructure (PM NI),Portfolio Manager Supporting Establishment Systems (PfM SES)
+Program Manager Wargaming Capability (PM WGC),Portfolio Manager Supporting Establishment Systems (PfM SES)
+Enterprise Software Licensing Program Office (PMW 172.4),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Enterprise Systems and Services Program Office (PMW 250),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Global Combat Support Systems - Marine Corps Program Office (PMW 230),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Naval Enterprise Networks Program Office (PMW 205),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Navy Commercial Cloud Services Program Office (PMW 270),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Navy Enterprise Business Solutions Program Office (PMW 220),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Navy Maritime Maintenance Enterprise Solution - Technical Refresh (PMW 444),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Navy Sensitive Compartmented Information and Controlled Access Program Networks Ashore (PMW 260),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Sea Warrior Program Office (PMW 240),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Special Access Program Networks Program Office (PMW 280),Program Executive Officer Enterprise Information Systems (PEO EIS)
+Program Manager Advanced Amphibious Assault (PM AAA),Program Executive Officer Land Systems (PEO LS)
+Program Manager Air Command and Control Sensor Netting (PM AC2SN),Program Executive Officer Land Systems (PEO LS)
+Program Manager Ground Air Task Oriented Radar (PM G/ATOR),Program Executive Officer Land Systems (PEO LS)
+Program Manager Ground Based Air Defense (PM GBAD),Program Executive Officer Land Systems (PEO LS)
+Program Manager Light Tactical Vehicles (PM LTV),Program Executive Officer Land Systems (PEO LS)
+Program Manager Medium and Heavy Tactical Vehicles (PM M&HTV),Program Executive Officer Land Systems (PEO LS)
+Program Manager Towed Artillery Systems (PM TAS),Program Executive Officer Land Systems (PEO LS)
+Tech Bridges,Naval Expeditions (NavalX) Agility Office
+Naval Research Laboratory (NRL),Office of Naval Research (ONR)
+Air Anti-Submarine Warfare Systems Program Office (PMA-264),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+"E-6 Airborne Strategic Command, Control and Communications (C3) Program Office (PMA-271)","Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+H-1 Program Office (PMA-276),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+H-53 Heavy Lift Helicopters Program Office (PMA-261),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+H-60 Multi-Mission Helicopters Program Office (PMA-299),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+Maritime Patrol and Reconnaissance Aircraft Program Office (PMA-290),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+Presidential Helicopters Program Office (PMA-274),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+Tactical Airlift Program Office (PMA-207),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+V-22 Joint Program Office (PMA-275),"Program Executive Officer Air, ASW, Assault, and Special Missions (PEO-A)"
+CVN 78 Class Program Office (PMS 378),Program Executive Officer Aircraft Carriers (PEO CV)
+CVN 79/80 Program Office (PMS 379),Program Executive Officer Aircraft Carriers (PEO CV)
+In-Service Aircraft Carrier Program Office (PMS 312),Program Executive Officer Aircraft Carriers (PEO CV)
+Battlespace Awareness and Information Operations Program Office (PMW 120),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Carrier and Air Integration Program Office (PMW 750),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Command and Control Systems Program Office (PMW 150),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Communications and GPS Navigation Program Office (PMW/A 170),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Information Assurance and Cyber Security Program Office (PMW 130),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+International C4I Integration Program Office (PMW 740),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Ship Integration Program Office (PMW 760),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Shore And Expeditionary Integration Program Office (PMW 790),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Tactical Networks Program Office (PMW 160),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+Undersea Communications and Integration Program Office (PMW 770),"Program Executive Officer Command, Control, Communications, Computers & Intelligence (PEO C4I)"
+F-35 Joint Program Office (JPO),Program Executive Officer Joint Strike Fighter (PEO JSF)
+Amphibious Warfare Program Office (PMS 377),Program Executive Officer Ships (PEO Ships)
+DDG 1000 Program Office (PMS 500),Program Executive Officer Ships (PEO Ships)
+DDG 51 Program Office (PMS 400D),Program Executive Officer Ships (PEO Ships)
+Electric Ships Office (PMS 320),Program Executive Officer Ships (PEO Ships)
+LPD 17/LX(R) Program Office (PMS 317),Program Executive Officer Ships (PEO Ships)
+Ships Acquisition Management (Ships AM),Program Executive Officer Ships (PEO Ships)
+Strategic and Theater Sealift Program Office (PMS 385),Program Executive Officer Ships (PEO Ships)
+"Support Ships, Boats and Craft Program Office (PMS 325)",Program Executive Officer Ships (PEO Ships)
+Maritime Surveillance Systems Program Office (PMS 485),Program Executive Officer Submarines (PEO SUB)
+Submarine Acoustic Systems Program Office (PMS 401),Program Executive Officer Submarines (PEO SUB)
+Submarine Combat and Weapons Control Program Office (PMS 425),Program Executive Officer Submarines (PEO SUB)
+Submarine Electromagnetic Systems Program Office (PMS 435),Program Executive Officer Submarines (PEO SUB)
+Undersea Defensive Warfare Systems Program Office (PMS 415),Program Executive Officer Submarines (PEO SUB)
+Undersea Weapons Program Office (PMS 404),Program Executive Officer Submarines (PEO SUB)
+VIRGINIA Class Program Office (PMS 450),Program Executive Officer Submarines (PEO SUB)
+Advanced Tactical Aircraft Protection Systems Program Office (PMA-272),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Airborne Electronic Attack Program Office (PMA-234),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Aircraft Launch and Recovery Equipment Program Office (PMA-251),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Air-to-Air Missiles Program Office (PMA-259),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+AV-8B Weapon Systems Program Office (PMA-257),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+E-2/C-2 Airborne Command and Control Systems Program Office (PMA-231),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+F/A-18 and EA-18G Program Office (PMA-265),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Naval Air Traffic Management Systems Program Office (PMA-213),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Naval Undergraduate Flight Training Systems Program Office (PMA-273),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Precision Strike Weapons Program Office (PMA-201),Program Executive Officer Tactical Aircraft Programs (PEO-T)
+Frigate Program Office (PMS 515),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+International Small Combatants Program Office (PMS 525),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+LCS Fleet Introduction & Sustainment Program Office (PMS 505),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+LCS Mission Modules Program Office (PMS 420),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+Littoral Combat Ships Program Office (PMS 501),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+Mine Warfare Program Office (PMS 495),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+Unmanned Maritime Systems Program Office (PMS 406),Program Executive Officer Unmanned and Small Combatants (PEO USC)
+Aerial Target & Decoy Systems Program Office (PMA-208),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Common Standards and Interoperability (CSI) Office,Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Direct & Time Sensitive Weapons Program Office (PMA-242),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Multi-Mission Tactical UAS Program Office (PMA-266),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Navy & Marine Corps Small Tactical Unmanned Aircraft Systems Program Office (PMA-263),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Persistent Maritime Unmanned Aircraft Systems Program Office (PMA-262),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Precision Strike Weapons Program Office (PMA-201),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Strike Planning and Execution Systems Program Office (PMA-281),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Tomahawk Weapons Systems Program Office (PMA-280),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Unmanned Combat Air System Demonstration Program Office (PMA-268),Program Executive Officer Unmanned Aviation and Strike Weapons (PEO-W)
+Emerging Missions,Strategic Systems Programs (SSP) Direct Reporting Program Manager (DRPM)
+Navy Treaty Implementation Program (NTIP),Strategic Systems Programs (SSP) Direct Reporting Program Manager (DRPM)
+Nuclear Weapons Security (NWS),Strategic Systems Programs (SSP) Direct Reporting Program Manager (DRPM)
+Payload Integrator,Strategic Systems Programs (SSP) Direct Reporting Program Manager (DRPM)
+Naval Air Warfare Center Aircraft Division (NAWCAD),Naval Air Systems Command (NAVAIR)
+Naval Air Warfare Center Training Systems Division (NAWCTSD),Naval Air Systems Command (NAVAIR)
+Naval Air Warfare Center Weapons Division (NAWCWD),Naval Air Systems Command (NAVAIR)
+Naval Sustainment System-Aviation (NSS-A),Naval Air Systems Command (NAVAIR)
+Program Executive Officer Common Systems (PEO CS),Naval Air Systems Command (NAVAIR)
+Center for Surface Combat Systems (CSCS),Naval Education and Training Command (NETC)
+Chief of Naval Air Training (CNATRA),Naval Education and Training Command (NETC)
+Naval Information Warfare Center (NIWC),Naval Information Forces (NAVIFOR)
+Naval Information Warfighting Development Center (NIWDC),Naval Information Forces (NAVIFOR)
+Cyber Engineering and Digital Transformation Directorate (SEA 03),Naval Sea Systems Command (NAVSEA)
+Field Activities,Naval Sea Systems Command (NAVSEA)
+Naval Surface Warfare Center (NSWC),Naval Sea Systems Command (NAVSEA)
+Naval Systems Engineering Directorate (SEA 05),Naval Sea Systems Command (NAVSEA)
+Naval Undersea Warfare Center (NUWC),Naval Sea Systems Command (NAVSEA)
+Nuclear Propulsion Directorate (SEA 08),Naval Sea Systems Command (NAVSEA)
+National Spectrum Consortium,"Office of the Deputy Assistant Secretary of Defense, Emerging Capability & Prototyping - ODASD(EC&P)"
+Rapid Reaction Technology Office,"Office of the Deputy Assistant Secretary of Defense, Emerging Capability & Prototyping - ODASD(EC&P)"
+Condition-Based Maintenance (CBM+),Air Force Rapid Sustainment Office (RSO)
+Aerial Networks Division (AFLCMC/HNA),"Program Executive Office Command, Control, Communications, Intelligence and Networks (PEO C3I&N)"
+C3I Infrastructure Division (AFLCMC/HNI),"Program Executive Office Command, Control, Communications, Intelligence and Networks (PEO C3I&N)"
+Cryptologic and Cyber Systems Division (AFLCMC/HNC),"Program Executive Office Command, Control, Communications, Intelligence and Networks (PEO C3I&N)"
+Family of Advanced Beyond Line-of-Sight Terminals (FAB-T) Division (AFLCMC/HNS),"Program Executive Office Command, Control, Communications, Intelligence and Networks (PEO C3I&N)"
+Nuclear Networks Division (AFLCMC/HNN),"Program Executive Office Command, Control, Communications, Intelligence and Networks (PEO C3I&N)"
+Theater Battle Control Division (AFLCMC/HBD),Program Executive Office Digital (PEO Digital) Directorate
+Advanced Systems and Development (SMC/AD) Directorate,PEO Space Systems
+Global Positioning Systems (GPS) Directorate,PEO Space Systems
+Launch Enterprise (SMC/LE) Directorate,PEO Space Systems
+Military Satellite Communications Systems Directorate,PEO Space Systems
+Range & Network Systems Directorate,PEO Space Systems
+Remote Sensing Directorate,PEO Space Systems
+Space Superiority Systems Directorate,PEO Space Systems
+Special Programs Directorate,PEO Space Systems
+Ogden Air Logistics Complex (OO-ALC),Air Force Sustainment Center (AFSC)
+Oklahoma City Air Logistics Complex (OC-ALC) Tinker Air Force Base,Air Force Sustainment Center (AFSC)
+Warner Robins Air Logistics Complex (WR-ALC),Air Force Sustainment Center (AFSC)
+Combined Space Operations Center (CSpOC),Combined Forces Space Component Command (CFSCC)
+Air Force Warfare Center,Air Combat Command (ACC)
+Air Force Institute of Technology,Air Education and Training Command (AETC)
+Air Force Test Pilot School (USAFTPS),Air Education and Training Command (AETC)
+CV-22 Replacement,Air Force Special Operations Command (AFSOC)
+Arsenal Plane,Air Force Warfighting Integration Capability (AFWIC) Office
+Cape Canveral Air Force Station,Space Operations Command
+Project Director Joint Bombs,Joint Program Executive Office Armaments & Ammunition (JPEO A&A)
+Project Director Joint Services,Joint Program Executive Office Armaments & Ammunition (JPEO A&A)
+Project Manager Close Combat Systems (PM CCS),Joint Program Executive Office Armaments & Ammunition (JPEO A&A)
+Project Manager Combat Ammunition Systems (PM CAS),Joint Program Executive Office Armaments & Ammunition (JPEO A&A)
+Project Manager Maneuver Ammunition Systems (PM MAS),Joint Program Executive Office Armaments & Ammunition (JPEO A&A)
+Project Manager Towed Artillery Systems (PM TAS),Joint Program Executive Office Armaments & Ammunition (JPEO A&A)
+Apache Attack Helicopter Project Office,Program Executive Office Aviation (PEO Aviation)
+Aviation Mission Systems & Architecture Project Office,Program Executive Office Aviation (PEO Aviation)
+Cargo Helicopters Project Office / Army CH-47 Fleet,Program Executive Office Aviation (PEO Aviation)
+Fixed Wing Aircraft Project Office,Program Executive Office Aviation (PEO Aviation)
+Future Attack Reconnaissance Aircraft (FARA) Project Office,Program Executive Office Aviation (PEO Aviation)
+Future Long-Range Assault Aircraft (FLRAA) Project Office,Program Executive Office Aviation (PEO Aviation)
+Multinational Aviation Special Project Office,Program Executive Office Aviation (PEO Aviation)
+Unmanned Aircraft Systems Project Office,Program Executive Office Aviation (PEO Aviation)
+Utility Helicopters Project Office,Program Executive Office Aviation (PEO Aviation)
+Project Manager Expeditionary Energy & Sustainment Systems (PM E2S2),Program Executive Office for Combat Support & Combat Service Support (PEO CS&CSS)
+Project Manager Force Projection (PM FP),Program Executive Office for Combat Support & Combat Service Support (PEO CS&CSS)
+Project Manager Joint Light Tactical Vehicles (PM JLTV),Program Executive Office for Combat Support & Combat Service Support (PEO CS&CSS)
+Project Manager Transportation Systems (PM TS),Program Executive Office for Combat Support & Combat Service Support (PEO CS&CSS)
+Program Management Office Network Enablers (PMO Net E),"Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)"
+"Project Lead Interoperability, Integration and Services (PL I2S)","Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)"
+Project Manager Mission Command (PM MC),"Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)"
+Project Manager Mission Network,"Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)"
+Project Manager Tactical Network (PM TN),"Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)"
+Project Manager Tactical Radios (PM TR),"Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)"
+"Project Director, Enterprise Services",Program Executive Office for Enterprise Information Systems (PEO EIS)
+"Project Manager, Army Enterprise Systems Integration Program (PM AESIP)",Program Executive Office for Enterprise Information Systems (PEO EIS)
+"Project Manager, Defense Communications and Army Transmission Systems (PM DCATS)",Program Executive Office for Enterprise Information Systems (PEO EIS)
+"Project Manager, Defensive Cyber Operations",Program Executive Office for Enterprise Information Systems (PEO EIS)
+"Project Manager, General Fund Enterprise Business Solutions (PM GFEBS)",Program Executive Office for Enterprise Information Systems (PEO EIS)
+"Project Manager, Integrated Personnel and Pay System - Army (PM IPPS-A)",Program Executive Office for Enterprise Information Systems (PEO EIS)
+"Program Manager, Next Generation Combat Vehicle (PM NGCV)",Program Executive Office for Ground Combat Systems (PEO GCS)
+"Project Director, Main Battle Tank Systems (PD MBTS)",Program Executive Office for Ground Combat Systems (PEO GCS)
+"Project Management Office, Mobile Protected Firepower (MPF)",Program Executive Office for Ground Combat Systems (PEO GCS)
+"Project Manager, Armored Fighting Vehicles (PM AFV)",Program Executive Office for Ground Combat Systems (PEO GCS)
+"Project Manager, Armored Multi-Purpose Vehicle (PM AMPV)",Program Executive Office for Ground Combat Systems (PEO GCS)
+"Project Manager, Stryker Brigade Combat Team (PM SBCT)",Program Executive Office for Ground Combat Systems (PEO GCS)
+Army Integrated Air and Missile Defense (AIAMD) Project Office,Program Executive Office for Missiles and Space (PEO MS)
+Close Combat Weapon System (CCWS) Project Office,Program Executive Office for Missiles and Space (PEO MS)
+"Counter-Rocket, Artillery, Mortar (C-RAM) Program Office",Program Executive Office for Missiles and Space (PEO MS)
+Cruise Missile Defense Systems Project Office,Program Executive Office for Missiles and Space (PEO MS)
+Joint Attack Munition Systems (JAMS) Project Office,Program Executive Office for Missiles and Space (PEO MS)
+Lower Tier Product Office (LTPO),Program Executive Office for Missiles and Space (PEO MS)
+Missile Defense and Space Systems Program Office / Aviation and Ground Fires Program Office,Program Executive Office for Missiles and Space (PEO MS)
+Precision Fires Rocket and Missile Systems Program Office / Fires Radars and Sensors Program Office,Program Executive Office for Missiles and Space (PEO MS)
+"Project Manager, Soldier Protection and Individual Equipment (PM SPIE)",Program Executive Office Soldier (PEO Soldier)
+"Project Manager, Soldier Sensors and Lasers (PM SSL)",Program Executive Office Soldier (PEO Soldier)
+"Project Manager, Soldier Warrior (PM SWAR)",Program Executive Office Soldier (PEO Soldier)
+"Project Manager, Soldier Weapons (PM SW)",Program Executive Office Soldier (PEO Soldier)
+Product Director Sensors - Aerial Intelligence (PD SAI),"Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+Product Director Tactical Exploitation of National Capabilities (PD TENCAP),"Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+"Product Manager, Distributed Common Ground System - Army (PM DCGS-A)","Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+Project Manager Aircraft Survivability Equipment (PM ASE),"Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+"Project Manager, Department of Defense Biometrics (PM DoD Biometrics)","Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+"Project Manager, Electronic Warfare & Cyber (PM EW&C)","Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+"Project Manager, Positioning Navigation Timing (PM PNT)","Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+"Project Manager, Terrestrial Sensors (PM TS)","Program Executive Officer for Intelligence, Electronic Warfare and Sensors (PEO IEW&S)"
+Joint Project Manager Medical Modeling and Simulation (JPM MMS),"Program Executive Officer for Simulation, Training and Instrumentation (PEO STRI)"
+Project Lead Field Operations (Field OPS),"Program Executive Officer for Simulation, Training and Instrumentation (PEO STRI)"
+"Project Manager Instrumentation, Targets and Threat Simulators, and SOF Training Systems (PM ITTS)","Program Executive Officer for Simulation, Training and Instrumentation (PEO STRI)"
+Project Manager Integrated Training Environment (PM ITE),"Program Executive Officer for Simulation, Training and Instrumentation (PEO STRI)"
+Project Manager Training Devices (PM TRADE),"Program Executive Officer for Simulation, Training and Instrumentation (PEO STRI)"
+U.S. Army Combat Capabilities Development Command (CCDC) - Americas,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) - Atlantic,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) - Aviation and Missile Center (AMC),Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) - Pacific,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Armaments Center,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Army Research Laboratory (ARL),Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Aviation & Missile Center,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) C5ISR Center,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Chemical Biological Center,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Data & Analysis Center,Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Ground Vehicle Systems Center (GVSC),Combat Capability Development Command (CCDC)
+U.S. Army Combat Capabilities Development Command (CCDC) Soldier Center,Combat Capability Development Command (CCDC)
+Air and Missile Defense Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+"Assured Positioning, Navigation and Timing (APNT) Cross Functional Team (CFT)",Cross-Functional Teams (CFTs)
+Future Vertical Lift (FVL) Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+Long-Range Precision Fires (LRPF) Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+Network Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+Next-Generation Combat Vehicle (NGCV) Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+Soldier Lethality Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+Synthetic Training Environment (STE) Cross Functional Team (CFT),Cross-Functional Teams (CFTs)
+Cyber Center of Excellence (CoE) Capabilities Development and Integration Directorate (CDID),Futures and Concepts Center (FCC)
+Fires Center of Excellence Capabilities (CoE) Development and Integration Directorate (CDID),Futures and Concepts Center (FCC)
+Joint Modernization Command,Futures and Concepts Center (FCC)
+Maneuver Center of Excellence (CoE) Capabilities Development and Integration Directorate (CDID),Futures and Concepts Center (FCC)
+Mission Command Center of Excellence (CoE) Capabilities Development & Integration Directorate (CDID),Futures and Concepts Center (FCC)
+U.S. Army Futures and Concepts Center (FCC) Research & Analysis Center,Futures and Concepts Center (FCC)
+Enterprise Resource Planning System,Program Executive Officer Enterprise Information Systems (PEO EIS)
+Capital Tech Bridge,Tech Bridges
+Central Coast Tech Bridge,Tech Bridges
+Central Florida Tech Bridge,Tech Bridges
+Inland Empire Tech Bridge,Tech Bridges
+Mid Atlantic Tech Bridge,Tech Bridges
+Midwest Tech Bridge,Tech Bridges
+Northeast Tech Bridge,Tech Bridges
+Northwest Tech Bridge,Tech Bridges
+Palmetto Tech Bridge,Tech Bridges
+SoCal Tech Bridge,Tech Bridges
+Southern Maryland Tech Bridge,Tech Bridges
+Ventura Tech Bridge,Tech Bridges
+AIRWorks,Naval Air Warfare Center Aircraft Division (NAWCAD)
+Specialized and Proven Aircraft Program Office (PMA 226),Program Executive Officer Common Systems (PEO CS)
+Naval Information Warfare Center Atlantic (NIWC Atlantic),Naval Information Warfare Center (NIWC)
+Naval Information Warfare Center Pacific (NIWC Pacific),Naval Information Warfare Center (NIWC)
+Shipyards,Field Activities
+Naval Surface Warfare Center Crane Division,Naval Sea Systems Command (NAVSEA)
+Naval Surface Warfare Center Dahlgren Division (NSWCDD),Naval Surface Warfare Center (NSWC)
+Naval Surface Warfare Center Philadelphia Division (NSWCPD),Naval Surface Warfare Center (NSWC)
+Ground Based Air Defense (GBAD) System [USN],Program Manager Ground Based Air Defense (PM GBAD)
+Capability Integration and Transition Division (ADY),Advanced Systems and Development (SMC/AD) Directorate
+Ground Systems and Operations Division (ADG),Advanced Systems and Development (SMC/AD) Directorate
+Strategic Concepts Division (ADX),Advanced Systems and Development (SMC/AD) Directorate
+Rocket Systems Launch Program,Launch Enterprise (SMC/LE) Directorate
+Enterprise Space Battle Management C2 (ESBMC2),Space Superiority Systems Directorate
+Space Domain Awareness Marketplace,Special Programs Directorate
+Magnetic Anomaly Navigation (MAGNAV) technique,Air Force Institute of Technology
+Product Manager Unmanned Ground Vehicles,Project Manager Force Projection (PM FP)
+Product Lead for Common Hardware Systems,"Project Lead Interoperability, Integration and Services (PL I2S)"
+Product Lead for Communications Security,"Project Lead Interoperability, Integration and Services (PL I2S)"
+Product Lead for Tactical Network Initialization and Configuration,"Project Lead Interoperability, Integration and Services (PL I2S)"
+Product Manager Capability Set Development,"Project Lead Interoperability, Integration and Services (PL I2S)"
+Product Manager for Command Post Integrated Infrastructure,"Project Lead Interoperability, Integration and Services (PL I2S)"
+Product Manager for Tactical Cyber and Network Operations,"Project Lead Interoperability, Integration and Services (PL I2S)"
+"Software, Simulations, Systems Engineering & Integration (S3I)",U.S. Army Combat Capabilities Development Command (CCDC) Aviation & Missile Center
+Systems Readiness Directorate,U.S. Army Combat Capabilities Development Command (CCDC) Aviation & Missile Center
+Technology Development Directorate,U.S. Army Combat Capabilities Development Command (CCDC) Aviation & Missile Center
+"Command, Power and Integration Directorate (CP&ID)",U.S. Army Combat Capabilities Development Command (CCDC) C5ISR Center
+Space and Terrestrial Communications Directorate (S&TCD),U.S. Army Combat Capabilities Development Command (CCDC) C5ISR Center
+Norfolk Navy Shipyard,Shipyards
+Cross Mission Ground and Communications Enterprise,Ground Systems and Operations Division (ADG)
+Intelligence and Information Warfare Directorate,"Command, Power and Integration Directorate (CP&ID)"
+Technology and Innovation Laboratory,Norfolk Navy Shipyard
