@@ -321,38 +321,10 @@
       {"name": "Transportation Command", "value": 3812}
      ]
     },
-    {"name": "Inspector General (IG)",
-     "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
-      {"name": "HierarchicalCluster", "value": 6714},
-      {"name": "MergeEdge", "value": 743}
-     ]
-    },
-    {"name": "Defense Digital Services (DDS)",
-     "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
-      {"name": "HierarchicalCluster", "value": 6714},
-      {"name": "MergeEdge", "value": 743}
-     ]
-    },
-    {"name": "Operational Test & Evaluation (OSD (OT&E))",
-     "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
-      {"name": "HierarchicalCluster", "value": 6714},
-      {"name": "MergeEdge", "value": 743}
-     ]
-    },
-    {"name": "Cost Assessment & Program Evaluation (OSD (CAPE))",
-     "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
-      {"name": "HierarchicalCluster", "value": 6714},
-      {"name": "MergeEdge", "value": 743}
-     ]
-    },
+    {"name": "Inspector General (IG)","value": 3938},
+    {"name": "Defense Digital Services (DDS)", "value": 3938},
+    {"name": "Operational Test & Evaluation (OSD (OT&E))","value": 3938},
+    {"name": "Cost Assessment & Program Evaluation (OSD (CAPE))","value": 3938},
     {"name": "Chief Information Officer (OSD (CIO))",
      "children": [
       {"name": "Joint Artificial Intelligence Center (JAIC)", "value": 3938},
@@ -361,14 +333,7 @@
       {"name": "Info Enterprise (CIO(IE))", "value": 743}
      ]
     },
-    {"name": "Protecting Critical Tech Task Force (OSD (PCTTF))",
-     "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
-      {"name": "HierarchicalCluster", "value": 6714},
-      {"name": "MergeEdge", "value": 743}
-     ]
-    },
+    {"name": "Protecting Critical Tech Task Force (OSD (PCTTF))","value": 3938},
     {"name": "Office of Under Secretary of Defense Acquistion & Sustainment (OUSD (A&S))",
      "children": [
       {"name": "Joint Rapid Acq Cell", "value": 3938},
