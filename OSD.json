@@ -1,0 +1,1028 @@
+{"name": "ROOT",
+ "children": [ 
+  {"name": "Office of Secretary of Defense",
+    "children": [ 
+	{"name": "Department of Defense Field Activities",
+	 "children": [ 
+	 {"name": "American Forces Radio and Television Service / Defense Media Center", "size": 100}, 
+	 {"name": "U.S. Army and Air Force Exchange Service", "size": 100}
+	 ]
+	}, 
+	{"name": "U.S. National Guard Bureau",
+	 "children": [ 
+	 {"name": "U.S. Army National Guard",
+	  "children": [ 
+	  {"name": "Arkansas Army National Guard", "size": 100}, 
+	  {"name": "West Virginia Army National Guard", "size": 100}, 
+	  {"name": "Indiana Army National Guard", "size": 100}, 
+	  {"name": "Minnesota Army National Guard", "size": 100}, 
+	  {"name": "California Army National Guard", "size": 100}, 
+	  {"name": "Michigan Army National Guard", "size": 100}, 
+	  {"name": "Florida Army National Guard", "size": 100}, 
+	  {"name": "Alabama Army National Guard", "size": 100}, 
+	  {"name": "Pennsylvania Army National Guard", "size": 100}, 
+	  {"name": "Wisconsin Army National Guard", "size": 100}, 
+	  {"name": "Maryland Army National Guard", "size": 100}, 
+	  {"name": "Virginia Army National Guard", "size": 100}, 
+	  {"name": "Delaware Army National Guard", "size": 100}, 
+	  {"name": "New York Army National Guard", "size": 100}, 
+	  {"name": "Guam Army National Guard", "size": 100}, 
+	  {"name": "Montana Army National Guard", "size": 100}, 
+	  {"name": "Iowa Army National Guard", "size": 100}, 
+	  {"name": "Alaska Army National Guard", "size": 100}, 
+	  {"name": "Vermont Army National Guard", "size": 100}, 
+	  {"name": "Oregon Army National Guard", "size": 100}, 
+	  {"name": "North Dakota Army National Guard", "size": 100}, 
+	  {"name": "U.S. Army National Guard Readiness Center", "size": 100}, 
+	  {"name": "New Hampshire Army National Guard", "size": 100}, 
+	  {"name": "Texas Army National Guard", "size": 100}, 
+	  {"name": "Louisiana Army National Guard", "size": 100}, 
+	  {"name": "Washington Army National Guard", "size": 100}, 
+	  {"name": "Georgia Army National Guard", "size": 100}, 
+	  {"name": "Arizona Army National Guard", "size": 100}, 
+	  {"name": "Nebraska Army National Guard", "size": 100}, 
+	  {"name": "New Mexico Army National Guard", "size": 100}, 
+	  {"name": "Connecticut Army National Guard", "size": 100}, 
+	  {"name": "Missouri Army National Guard", "size": 100}, 
+	  {"name": "South Carolina Army National Guard", "size": 100}, 
+	  {"name": "Ohio Army National Guard", "size": 100}, 
+	  {"name": "Rhode Island Army National Guard", "size": 100}, 
+	  {"name": "Utah Army National Guard", "size": 100}, 
+	  {"name": "Maine Army National Guard", "size": 100}, 
+	  {"name": "Kansas Army National Guard", "size": 100}, 
+	  {"name": "Oklahoma Army National Guard", "size": 100}, 
+	  {"name": "Illinois Army National Guard", "size": 100}, 
+	  {"name": "Tennessee Army National Guard", "size": 100}, 
+	  {"name": "Colorado Army National Guard", "size": 100}, 
+	  {"name": "Mississippi Army National Guard", "size": 100}, 
+	  {"name": "New Jersey Army National Guard", "size": 100}, 
+	  {"name": "Kentucky Army National Guard", "size": 100}, 
+	  {"name": "Massachusetts Army National Guard", "size": 100}, 
+	  {"name": "South Dakota Army National Guard", "size": 100}, 
+	  {"name": "Idaho Army National Guard", "size": 100}, 
+	  {"name": "Nevada Army National Guard", "size": 100}, 
+	  {"name": "Wyoming Army National Guard", "size": 100}, 
+	  {"name": "District of Columbia Army National Guard", "size": 100}, 
+	  {"name": "North Carolina Army National Guard", "size": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air National Guard",
+	  "children": [ 
+	  {"name": "Colorado Air National Guard", "size": 100}, 
+	  {"name": "Idaho Air National Guard", "size": 100}, 
+	  {"name": "Missouri Air National Guard", "size": 100}, 
+	  {"name": "Kansas Air National Guard", "size": 100}, 
+	  {"name": "Alaska Air National Guard", "size": 100}, 
+	  {"name": "Delaware Air National Guard", "size": 100}, 
+	  {"name": "Utah Air National Guard", "size": 100}, 
+	  {"name": "Nevada Air National Guard", "size": 100}, 
+	  {"name": "Kentucky Air National Guard", "size": 100}, 
+	  {"name": "Connecticut Air National Guard", "size": 100}, 
+	  {"name": "Wisconsin Air National Guard", "size": 100}, 
+	  {"name": "Oklahoma Air National Guard", "size": 100}, 
+	  {"name": "New Hampshire Air National Guard", "size": 100}, 
+	  {"name": "Hawaii Air National Guard", "size": 100}, 
+	  {"name": "North Carolina Air National Guard", "size": 100}, 
+	  {"name": "Indiana Air National Guard", "size": 100}, 
+	  {"name": "Michigan Air National Guard", "size": 100}, 
+	  {"name": "Louisiana Air National Guard", "size": 100}, 
+	  {"name": "Oregon Air National Guard", "size": 100}, 
+	  {"name": "New Jersey Air National Guard", "size": 100}, 
+	  {"name": "Arizona Air National Guard", "size": 100}, 
+	  {"name": "California Air National Guard", "size": 100}, 
+	  {"name": "Minnesota Air National Guard", "size": 100}, 
+	  {"name": "Montana Air National Guard", "size": 100}, 
+	  {"name": "South Carolina Air National Guard", "size": 100}, 
+	  {"name": "North Dakota Air National Guard", "size": 100}, 
+	  {"name": "Maine Air National Guard", "size": 100}, 
+	  {"name": "Nebraska Air National Guard", "size": 100}, 
+	  {"name": "New York Air National Guard", "size": 100}, 
+	  {"name": "Arkansas Air National Guard", "size": 100}, 
+	  {"name": "Tennessee Air National Guard", "size": 100}, 
+	  {"name": "New Mexico Air National Guard", "size": 100}, 
+	  {"name": "Vermont Air National Guard", "size": 100}, 
+	  {"name": "Maryland Air National Guard", "size": 100}, 
+	  {"name": "Texas Air National Guard", "size": 100}, 
+	  {"name": "Ohio Air National Guard", "size": 100}, 
+	  {"name": "Florida Air National Guard", "size": 100}, 
+	  {"name": "Massachusetts Air National Guard", "size": 100}, 
+	  {"name": "Virginia Air National Guard", "size": 100}, 
+	  {"name": "Pennsylvania Air National Guard", "size": 100}, 
+	  {"name": "West Virginia Air National Guard", "size": 100}, 
+	  {"name": "District of Columbia Air National Guard", "size": 100}, 
+	  {"name": "Alabama Air National Guard", "size": 100}, 
+	  {"name": "Iowa Air National Guard", "size": 100}, 
+	  {"name": "Wyoming Air National Guard", "size": 100}, 
+	  {"name": "Illinois Air National Guard", "size": 100}, 
+	  {"name": "Georgia Air National Guard", "size": 100}, 
+	  {"name": "Washington Air National Guard", "size": 100}
+	  ]
+	 }
+	 ]
+	}, 
+	{"name": "Office of the Secretary of Defense",
+	 "children": [ 
+	 {"name": "Office of the General Counsel of the Department of Defense",
+	  "children": [ 
+	  {"name": "U.S. Defense Legal Services Agency", "size": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Joint Chiefs of Staff",
+	  "children": [ 
+	  {"name": "U.S. Joint Staff", "size": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Defense Innovation Unit", "size": 100}, 
+	 {"name": "Assistant to the Secretary of Defense for Public Affairs",
+	  "children": [ 
+	  {"name": "U.S. Dept. of Defense, Defense Media Activity", "size": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Dept. of Defense, Office of Net Assessment", "size": 100}, 
+	 {"name": "Office of the Director, Operational Test and Evaluation", "size": 100}, 
+	 {"name": "Office of the Under Secretary of Defense for Acquisition and Sustainment",
+	  "children": [ 
+	  {"name": "U.S. Defense Logistics Agency",
+	   "children": [ 
+	   {"name": "DLA Troop Support", "size": 100}, 
+	   {"name": "DLA Procurement Technical Assistance Program - GMU", "size": 100}, 
+	   {"name": "DLA Disposition Services", "size": 100}, 
+	   {"name": "DLA Land and Maritime", "size": 100}, 
+	   {"name": "DLA Distribution", "size": 100}, 
+	   {"name": "DLA Aviation", "size": 100}, 
+	   {"name": "DLA Enterprise Support", "size": 100}, 
+	   {"name": "DLA Energy", "size": 100}, 
+	   {"name": "DLA Document Services", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Defense Threat Reduction Agency",
+	   "children": [ 
+	   {"name": "Joint Improvised-Threat Defense Organization", "size": 100}, 
+	   {"name": "U.S. Defense Threat Reduction Agency (DTRA), Albuquerque Contract Office", "size": 100}
+	   ]
+	  }, 
+	  {"name": "Defense Contract Management Agency, Headquarters",
+	   "children": [ 
+	   {"name": "DCMA Eastern Regional Command", "size": 100}, 
+	   {"name": "DCMA Cost & Pricing Regional Command", "size": 100}, 
+	   {"name": "DCMA Special Programs Command", "size": 100}, 
+	   {"name": "DCMA Western Regional Command", "size": 100}, 
+	   {"name": "DCMA Central Regional Command", "size": 100}, 
+	   {"name": "DCMA International Command", "size": 100}
+	   ]
+	  }, 
+	  {"name": "Joint Tactical Networking Center", "size": 100}, 
+	  {"name": "U.S. Dept. of Defense, Office of Economic Adjustment", "size": 100}, 
+	  {"name": "U.S. Defense Microelectronics Activity", "size": 100}, 
+	  {"name": "U.S. Defense Business Transformation Agency (Disestablished by DOD in August 2010)", "size": 100}, 
+	  {"name": "Office of the Assistant Secretary of Defense for Acquisition", "size": 100}
+	  ]
+	 }, 
+	 {"name": "Office of the U.S. Deputy Secretary of Defense",
+	  "children": [ 
+	  {"name": "U.S. DoD Strategic Capabilities Office", "size": 100}
+	  ]
+	 }, 
+	 {"name": "Office of the Assistant Secretary of Defense for Legislative Affairs", "size": 100},
+	 {"name": "U.S. Dept. of Defense, Chief Information Officer",
+	  "children": [ 
+	  {"name": "U.S. Defense Information Systems Agency",
+	   "children": [ 
+	   {"name": "Defense Information Technology Contracting Organization - Pacific", "size": 100}, 
+	   {"name": "U.S. Defense Information Technology Contracting Organization - Scott", "size": 100}, 
+	   {"name": "Defense Information Technology Contracting Organization - Alaska", "size": 100}, 
+	   {"name": "U.S. Defense Information Technology Contracting Organization - National Capital Region", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Joint Information Environment (JIE) Technical Synchronization Office", "size": 100}, 
+	  {"name": "White House Communications Agency", "size": 100}, 
+	  {"name": "U.S. Dept. of Defense Joint Artificial Intelligence Center", "size": 100}, 
+	  {"name": "U.S. Defense Spectrum Organization", "size": 100}, 
+	  {"name": "U.S. Joint Interoperability Test Command", "size": 100}
+	  ]
+	 }, 
+	 {"name": "Under Secretary of Defense for Intelligence & Security",
+	  "children": [ 
+	  {"name": "U.S. Defense Intelligence Agency",
+	   "children": [ 
+	   {"name": "U.S. Defense Intelligence Agency, Missile and Space Intelligence Center", "size": 100}, 
+	   {"name": "U.S. Defense Clandestine Service", "size": 100}, 
+	   {"name": "Defense Intelligence Agency, Virginia Contracting Activity", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. National Geospatial-Intelligence Agency",
+	   "children": [ 
+	   {"name": "U.S. National Geospatial-Intelligence Agency (NGA), OCSW - GEOINT/Enterprise Operations", "size": 100}, 
+	   {"name": "U.S. NGA St. Louis Contracting Center", "size": 100}, 
+	   {"name": "U.S. NGA Arnold", "size": 100}, 
+	   {"name": "U.S. National Geospatial-Intelligence Agency, Procurement and Contracts In Support of Acquisition Directorate", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Defense Counterintelligence and Security Agency", "size": 100}, 
+	  {"name": "U.S. National Reconnaissance Office", "size": 100}, 
+	  {"name": "U.S. National Security Agency", "size": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Under Secretary of Defense for Personnel and Readiness",
+	  "children": [ 
+	  {"name": "U.S. Department of Defense Education Activity",
+	   "children": [ 
+	   {"name": "U.S. DoDEA Americas", "size": 100}, 
+	   {"name": "U.S. Defense Activity for Non-Traditional Education Support", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Defense Commissary Agency", "size": 100}, 
+	  {"name": "Defense Human Resources Activity",
+	   "children": [ 
+	   {"name": "Defense Manpower Data Center", "size": 100}
+	   ]
+	  }, 
+	  {"name": "Office of the Assistant Secretary of Defense for Health Affairs",
+	   "children": [ 
+	   {"name": "Uniformed Services University of the Health Sciences", "size": 100}, 
+	   {"name": "Defense Health Agency", "size": 100}
+	   ]
+	  }
+	  ]
+	 }, 
+	 {"name": "Office of Cost Assessment and Program Evaluation", "size": 100}, 
+	 {"name": "U.S. Unified Combatant Commands",
+	  "children": [ 
+	  {"name": "U.S. Cyber Command",
+	   "children": [ 
+	   {"name": "U.S. Marine Corps Forces Cyberspace Command", "size": 100}, 
+	   {"name": "U.S. Army Cyber Command", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Joint Forces Command",
+	   "children": [ 
+	   {"name": "NATO's Supreme Allied Command Transformation", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Transportation Command", "size": 100},
+	  {"name": "U.S. Space Command", "size": 100}, 
+	  {"name": "U.S. Special Operations Command",
+	   "children": [ 
+	   {"name": "U.S. SOCOM Special Operations Forces Acquisition, Technology and Logistics", "size": 100}, 
+	   {"name": "U.S. Naval Special Warfare Command", "size": 100}, 
+	   {"name": "U.S. Special Operations Command South", "size": 100}, 
+	   {"name": "U.S. Army Special Operations Command", "size": 100}, 
+	   {"name": "U.S. Air Force Special Operations Command", "size": 100}, 
+	   {"name": "U.S. Special Operations Command, Technical Applications Contracting Office", "size": 100}, 
+	   {"name": "U.S. Marine Corps Forces Special Operations Command", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Indo-Pacific Command",
+	   "children": [ 
+	   {"name": "U.S. Center of Excellence in Disaster Management and Humanitarian Assistance", "size": 100}, 
+	   {"name": "U.S. Special Operations Command Pacific", "size": 100}, 
+	   {"name": "U.S. Joint Intelligence Center Pacific", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Northern Command",
+	   "children": [ 
+	   {"name": "North American Aerospace Defense Command", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Special Operation Command Pacific", "size": 100}, 
+	  {"name": "U.S. Southern Command",
+	   "children": [ 
+	   {"name": "U.S. Joint Interagency Task Force South", "size": 100}, 
+	   {"name": "U.S. Naval Forces Southern Command / 4th Fleet", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Strategic Command", "size": 100}, 
+	  {"name": "U.S. Central Command",
+	   "children": [ 
+	   {"name": "U.S. Army Central Command", "size": 100}, 
+	   {"name": "U.S. Special Operations Command Central", "size": 100}
+	   ]
+	  }
+	  ]
+	 }, 
+	 {"name": "Office of the Undersecretary of Defense for Research and Engineering",
+	  "children": [ 
+	  {"name": "U.S. Defense Technical Information Center", "size": 100}, 
+	  {"name": "U.S. DoD Foreign Comparative Testing Program", "size": 100}, 
+	  {"name": "U.S. Dept. of Defense, Test Resource Management Center", "size": 100}, 
+	  {"name": "U.S. Missile Defense Agency",
+	   "children": [ 
+	   {"name": "U.S. Missile Defense Agency (MDA), Redstone Arsenal", "size": 100}, 
+	   {"name": "U.S. Missile Defense Integration & Operations Center", "size": 100}, 
+	   {"name": "U.S. Missile Defense Agency, El Segundo", "size": 100}, 
+	   {"name": "Advanced Technology", "size": 100}, 
+	   {"name": "U.S. Missile Defense Agency, Kirtland", "size": 100}, 
+	   {"name": "U.S. Missile Defense Agency, Dahlgren", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Defense Advanced Research Projects Agency",
+	   "children": [ 
+	   {"name": "Biological Technologies Office", "size": 100}, 
+	   {"name": "Adaptive Capabilities Office", "size": 100}, 
+	   {"name": "Tactical Technology Office", "size": 100}, 
+	   {"name": "Adaptive Execution Office", "size": 100}, 
+	   {"name": "Aerospace Projects Office", "size": 100}, 
+	   {"name": "Other DARPA", "size": 100}, 
+	   {"name": "Information System Office", "size": 100}, 
+	   {"name": "Defense Sciences Office", "size": 100}, 
+	   {"name": "Microsystems Technology Office", "size": 100}, 
+	   {"name": "Information Awareness Office", "size": 100}, 
+	   {"name": "Strategic Technology Office", "size": 100}, 
+	   {"name": "Special Projects Office", "size": 100}, 
+	   {"name": "Mission Services Office", "size": 100}, 
+	   {"name": "Information Processing Technology Office", "size": 100}, 
+	   {"name": "Information Technology Office", "size": 100}, 
+	   {"name": "Joint Dual-Use Program Office", "size": 100}, 
+	   {"name": "Tansformational Convergence Technology Office", "size": 100}, 
+	   {"name": "Information Innovation Office", "size": 100}, 
+	   {"name": "Advanced Technology Office", "size": 100}, 
+	   {"name": "Small Business Innovation Research Office", "size": 100}, 
+	   {"name": "Information Exploitation Office", "size": 100}, 
+	   {"name": "Unmanned Combat Air Systems", "size": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Space Development Agency", "size": 100}, 
+	  {"name": "Office of the Secretary of Defense, Rapid Reaction Technology Office", "size": 100}
+	  ]
+	 }, 
+	 {"name": "Under Secretary of Defense Comptroller",
+	  "children": [ 
+	  {"name": "U.S. Defense Finance and Accounting Service",
+	   "children": [ 
+	   {"name": "U.S. Defense Finance and Accounting Service, Indianapolis", "size": 100}, 
+	   {"name": "U.S. Defense Finance and Accounting Service, Columbus", "size": 100}, 
+	   {"name": "U.S. Defense Finance and Accounting Service, Cleveland", "size": 100}, 
+	   {"name": "U.S. Defense Finance and Accounting Service, Denver", "size": 100}, 
+	   {"name": "U.S. Defense Finance and Accounting Service, Limestone", "size": 100}
+	   ]
+	  }, 
+	  {"name": "Defense Contract Audit Agency", "size": 100}
+	  ]
+	 }, 
+	 {"name": "Office of the Under Secretary of Defense (Policy)",
+	  "children": [ 
+	  {"name": "U.S. Defense Security Cooperation Agency", "size": 100}, 
+	  {"name": "U.S. Defense Technology Security Administration", "size": 100}, 
+	  {"name": "U.S. Defense POW/MIA Accounting Agency", "size": 100}, 
+	  {"name": "Office of the Assistant Secretary of Defense for Space Policy", "size": 100}, 
+	  {"name": "Assistant Secretary of Defense for Special Operations/Low-Intensity Conflict",
+	   "children": [ 
+	   {"name": "Combating Terrorism Technical Support Office", "size": 100}, 
+	   {"name": "Counter-Narcoterrorism Technology Program Office", "size": 100}
+	   ]
+	  }
+	  ]
+	 }
+	 ]
+	}
+    ]
+   },
+     {"name": "U.S. Army",
+   "children": [
+   {"name": "Headquarters, U.S. Army",
+    "children": [ 
+	{"name": "U.S. Army Office of the Surgeon General/Army Medical Command", "value": 100}, 
+	{"name": "U.S. Army Contracting Command, NETCOM/9th Army Signal Command, G4 Acquisition Office", "value": 100}, 
+	{"name": "Fort Sam Houston Network Enterprise Center (NEC)", "value": 100}, 
+	{"name": "U.S. Army, Information Management Support Center", "value": 100}, 
+	{"name": "U.S. Army Corps of Engineers",
+	 "children": [ 
+	 {"name": "U.S. Army Engineer Division, Mississippi Valley Division", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, Transatlantic", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, Southwestern Division", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, Great Lakes and Ohio River Division", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, North Atlantic Division", "value": 100}, 
+	 {"name": "U.S. Army Corps of Engineers, Engineer Research and Development Center", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, Northwestern Division", "value": 100}, 
+	 {"name": "U.S. Army Engineering and Support Center", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, South Atlantic Division", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, South Pacific Division", "value": 100}, 
+	 {"name": "U.S. Army Engineer Division, Pacific Ocean Division", "value": 100}, 
+	 {"name": "U.S. Army Humphreys Engineer Center Support Activity", "value": 100}
+	 ]
+	},
+	{"name": "U.S. Army Acquisition Support Center",
+	 "children": [ 
+	 {"name": "U.S. Army PEO Assembled Chemical Weapons Alternatives", "value": 100}, 
+	 {"name": "U.S. Army Human Resources Command", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Installation Management Command",
+	 "children": [ 
+	 {"name": "U.S. Army Garrison Aberdeen Proving Ground", "value": 100}, 
+	 {"name": "U.S. Army Garrison Fort Riley", "value": 100}, 
+	 {"name": "U.S. Army Family and MWR Command", "value": 100}, 
+	 {"name": "U.S. Army Garrison Presidio of Monterey", "value": 100}, 
+	 {"name": "U.S. Army Garrison Fort Polk", "value": 100}
+	 ]
+	}, 
+	{"name": "Chief of Staff of the U.S. Army",
+	 "children": [ 
+	 {"name": "U.S. Army Deputy Chief of Staff, G-1",
+	  "children": [ 
+	  {"name": "U.S. Army Enterprise Marketing Office", "value": 100}
+	  ]
+	 }
+	 ]
+	}, 
+	{"name": "U.S. Army Test and Evaluation Command",
+	 "children": [ 
+	 {"name": "U.S. Army Aberdeen Test Center", "value": 100},
+	 {"name": "U.S. Army Evaluation Center", "value": 100}, 
+	 {"name": "U.S. Army Dugway Proving Ground", "value": 100}, 
+	 {"name": "U.S. Army White Sands Missile Range", "value": 100}, 
+	 {"name": "U.S. Army Yuma Proving Ground", "value": 100}, 
+	 {"name": "U.S. Army Redstone Test Center", "value": 100}, 
+	 {"name": "U.S. Army Operational Test Command", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Criminal Investigation Command",
+	 "children": [ 
+	 {"name": "Defense Forensic Science Center", "value": 100}
+	 ]
+	}
+	]
+   }, 
+   {"name": "Office of the Secretary of the Army",
+    "children": [ 
+    {"name": "U.S. Army Office of Small Business Programs", "value": 100}, 
+	{"name": "Office of the Assistant Secretary of the Army for Manpower & Reserve Affairs",
+	 "children": [ 
+	 {"name": "U.S. Army Manpower Analysis Agency", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Chief Information Officer (CIO) and Deputy Chief of Staff, G-6", "value": 100}, 
+	{"name": "Office of the Assistant Secretary of the Army for Acquisition, Logistics, and Technology",
+	 "children": [ 
+	 {"name": "U.S. Army PEO Enterprise Information Systems",
+	  "children": [ 
+	  {"name": "U.S. Army PEO EIS, Project Manager Army Data and Analytics Platforms", "value": 100}, 
+	  {"name": "U.S. Army PEO EIS, Project Director Enterprise Services", "value": 100}, 
+	  {"name": "U.S. Army PEO EIS, Project Manager Defense Communications and Army Transmission Systems", "value": 100}, 
+	  {"name": "U.S. Army PEO EIS, Project Manager Defensive Cyber Operations", "value": 100}, 
+	  {"name": "U.S. Army PEO EIS, Project Manager Defense Integrated Business Systems", "value": 100}, 
+	  {"name": "U.S. Army PEO EIS, Project Manager Integrated Personnel and Pay System - Army", "value": 100}, 
+	  {"name": "U.S. Army Program Executive Office for Enterprise Information Systems (PEO EIS) Technology Applications Office", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Army Program Executive Office Aviation", "value": 100},
+	 {"name": "U.S. Army Program Executive Office (PEO) Soldier",
+	  "children": [ 
+	  {"name": "U.S. Army PEO Soldier, Project Manager Soldier Maneuver and Precision Targeting", "value": 100}, 
+	  {"name": "U.S. Army PEO Soldier, Program Director Integrated Visual Augmentation System", "value": 100}, 
+	  {"name": "U.S. Army PEO Soldier, Project Manager Soldier Survivability", "value": 100}, 
+	  {"name": "U.S. Army PEO Soldier, Project Manager Close Combat Squad", "value": 100}, 
+	  {"name": "U.S. Army PEO Soldier, Project Manager Soldier Lethality", "value": 100}, 
+	  {"name": "U.S. Army PEO Soldier, Project Director Rapid Equipping Force", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Army PEO Command, Control, and Communications-Tactical", "value": 100},
+	 {"name": "U.S. Army PEO Missiles & Space",
+	  "children": [ 
+	  {"name": "U.S. Army PEO MS, Project Manager Short & Intermediate Effectors for Layered Defense", "value": 100}, 
+	  {"name": "U.S. Army PEO MS, Project Manager Integrated Fire Mission Command", "value": 100}, 
+	  {"name": "U.S. Army PEO MS, Project Manager Strategic Operational Rockets & Missiles", "value": 100}, 
+	  {"name": "U.S. Army PEO MS, Project Manager Search, Track, Acquire, Radiate, Eliminate", "value": 100}, 
+	  {"name": "U.S. Army PEO MS, Project Manager Integrated Fires/Rapid Capabilities Office", "value": 100}, 
+	  {"name": "U.S. Army PEO MS, Project Manager Tactical Air & Ground Munitions", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Army PEO Ground Combat Systems", "value": 100}, 
+	 {"name": "Joint PEO for Chemical, Biological, Radiological and Nuclear Defense", "value": 100}, 
+	 {"name": "U.S. Army PEO Simulation, Training & Instrumentation", "value": 100}, 
+	 {"name": "U.S. Army PEO Combat Support and Combat Service Support", "value": 100}, 
+	 {"name": "U.S. Army PEO for Intelligence, Electronic Warfare & Sensors",
+	  "children": [ 
+	  {"name": "U.S. Army PEO IEW&S, Project Manager Positioning, Navigation & Timing", "value": 100}, 
+	  {"name": "U.S. Army PEO IEW&S, Project Manager Aircraft Survivability Equipment", "value": 100},
+	  {"name": "U.S. Army PEO IEW&S, Product Director Sensors Aerial Intelligence", "value": 100}, 
+	  {"name": "U.S. Army PEO IEW&S, Project Director Tactical Exploitation of National Capabilities", "value": 100}, 
+	  {"name": "U.S. Army PEO IEW&S, Project Manager Terrestrial Sensors", "value": 100}, 
+	  {"name": "U.S. Army PEO IEW&S, Project Manager Department of Defense Biometrics", "value": 100}, 
+	  {"name": "U.S. Army PEO IEW&S, Project Manager Electronic Warfare & Cyber", "value": 100}, 
+	  {"name": "U.S. Army PEO IEW&S, Project Manager Distributed Common Ground System - Army", "value": 100}
+	  ]
+	 }, 
+	 {"name": "Joint PEO Armaments & Ammunition",
+	  "children": [ 
+	  {"name": "JPEO A&A, Project Director for Joint Services", "value": 100}, 
+	  {"name": "JPEO A&A, Program Manager for Towed Artillery Systems", "value": 100}, 
+	  {"name": "JPEO A&A, Project Manager Combat Ammunition Systems", "value": 100}, 
+	  {"name": "JPEO A&A, Project Director Joint Bombs", "value": 100}, 
+	  {"name": "Joint Program Executive Office for Ammunition (JPEO A&A), Project Manager Maneuver Ammunition Systems", "value": 100}, 
+	  {"name": "JPEO A&A, Project Manager Close Combat Systems", "value": 100}
+	  ]
+	 }
+	 ]
+	}, 
+	{"name": "Army Rapid Capabilities and Critical Technologies Office", "value": 100}, 
+	{"name": "U.S. Army Training and Doctrine Command",
+	 "children": [ 
+	 {"name": "U.S. Army TRADOC, Cyber Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Intelligence Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Aviation Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Maneuver Support Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Mission Command Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Maneuver Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Sustainment Center of Excellence", "value": 100}, 
+	 {"name": "U.S. Army TRADOC, Fires Center of Excellence", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Network Enterprise Technology Command / 9th Army Signal Command", "value": 100}, 
+	{"name": "U.S. Army Space and Missile Defense Command/Army Forces Strategic Command",
+	 "children": [ 
+	 {"name": "U.S. Army Space & Missile Defense Command/ Army Forces Strategic Command (Colorado Springs)",
+	  "children": [ 
+	  {"name": "High-Energy Laser Systems Test Facility", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Army Space Program Office", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Forces Command",
+	 "children": [ 
+	 {"name": "U.S. Army Reserve Command", "value": 100}, 
+	 {"name": "U.S. Army National Training Center, Acquisition Command", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Intelligence and Security Command",
+	 "children": [ 
+	 {"name": "U.S. Army National Ground Intelligence Center", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Army Recruiting Command", "value": 100}, 
+	{"name": "U.S. Army Futures Command",
+	 "children": [ 
+	 {"name": "U.S. Army Combat Capabilities Development Command",
+	  "children": [ 
+	  {"name": "U.S. Army CCDC Command, Control, Communications, Computers, Cyber, Intelligence, Surveillance and Reconnaissance (C5ISR) Center",
+	   "children": [ 
+	   {"name": "U.S. Army CCDC C5ISR Center Product Realization Engineering and Quality Directorate", "value": 100}, 
+	   {"name": "U.S. Army CCDC C5ISR Center Night Vision and Electronic Sensors Directorate", "value": 100}, 
+	   {"name": "U.S. Army CCDC C5ISR Center Space and Terrestrial Communications Division ", "value": 100}, 
+	   {"name": "U.S. Army CCDC C5ISR Center, Intelligence and Information Warfare Directorate", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army CCDC Army Research Laboratory",
+	   "children": [ 
+	   {"name": "U.S. Army Research Office", "value": 100}, 
+	   {"name": "U.S. Army High Performance Computing Research Center", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army Joint Modernization Command", "value": 100}, 
+	  {"name": "CCDC Data & Analysis Center", "value": 100}, 
+	  {"name": "U.S. Army CCDC Aviation and Missile Center",
+	   "children": [ 
+	   {"name": "U.S. Army Aviation Development Directorate - Eustis", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army CCDC Acquisition Center",
+	   "children": [ 
+	   {"name": "U.S. Army CCDC Acquisition Center, Natick Contracting Division", "value": 100}, 
+	   {"name": "U.S. Army CCDC Acquisition Center, Adelphi Contracting Division", "value": 100}, 
+	   {"name": "U.S. Army CCDC Acquisition Center, Aberdeen Contracting Division", "value": 100}, 
+	   {"name": "U.S. Army Combat Capabilities Development Command (CCDC) - Chemical Biological Center", "value": 100}, 
+	   {"name": "U.S. Army CCDC Simulation and Training Technology Center", "value": 100}, 
+	   {"name": "U.S. Army CCDC Contracting Center - Denver", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army CCDC Armaments Center", "value": 100}, 
+	  {"name": "Other CCDC", "value": 100}, 
+	  {"name": "U.S. Army CCDC Soldier Center", "value": 100}, 
+	  {"name": "U.S. Army CCDC Ground Vehicle Systems Center",
+	   "children": [ 
+	   {"name": "U.S. Army CCDCGVSC National Automotive Center", "value": 100}
+	    ]
+	   }
+	   ]
+	  }
+      ]
+     },	  
+	 {"name": "U.S. Army Medical Research and Development Command", "value": 100},
+	 {"name": "U.S. Army Materiel Command",
+	  "children": [ 
+	  {"name": "U.S. Army Security Assistance Command", "value": 100}, 
+	  {"name": "U.S. Army Contracting Command",
+	   "children": [ 
+	   {"name": "U.S. Army Contracting Command (ACC), Mission & Installation Contracting Command", "value": 100}, 
+	   {"name": "U.S. Army Contracting Command (ACC), Expeditionary Contracting Command", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army Financial Management Command", "value": 100}, 
+	  {"name": "U.S. Army Environmental Command", "value": 100}, 
+	  {"name": "U.S. Army Aviation and Missile Life Cycle Management Command",
+	   "children": [ 
+	   {"name": "Corpus Christi Army Depot", "value": 100}, 
+	   {"name": "U.S. Army AMCOM, Letterkenny Army Depot", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army Communications-Electronics Command",
+	   "children": [ 
+	   {"name": "U.S. Army CECOM, Tobyhanna Army Depot", "value": 100}, 
+	   {"name": "U.S. Army CECOM, Central Technical Support Facility", "value": 100}, 
+	   {"name": "U.S. Army CECOM, Software Engineering Center", "value": 100}, 
+	   {"name": "U.S. Army CECOM, Information Systems Engineering Command", "value": 100}, 
+	   {"name": "U.S. Army CECOM, Integrated Logistics Support Center", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army Chemical Materials Activity",
+	   "children": [ 
+	   {"name": "Anniston Chemical Agent Disposal Facility", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army Special Programs Office", "value": 100}, 
+	  {"name": "U.S. Army Sustainment Command", "value": 100}, 
+	  {"name": "Army FedBid.com", "value": 100}, 
+	  {"name": "U.S. Army TACOM Life Cycle Management Command",
+	   "children": [ 
+	   {"name": "U.S. Army TACOM LCMC - Anniston Army Depot", "value": 100}, 
+	   {"name": "U.S. Army TACOM LCMC - Sierra Army Depot", "value": 100}, 
+	   {"name": "U.S. Army TACOM LCMC - Rock Island Arsenal Joint Manufacturing and Technology Center", "value": 100}, 
+	   {"name": "U.S. Army TACOM LCMC - Red River Army Depot", "value": 100}, 
+	   {"name": "U.S. Army TACOM LCMC - Watervliet Arsenal", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Army Military Surface Deployment and Distribution Command", "value": 100}, 
+	  {"name": "U.S. Army Joint Munitions and Lethality Life Cycle Management Command",
+	   "children": [ 
+	   {"name": "U.S. Army Joint Munitions Command", "value": 100}
+	   ]
+	  }
+	  ]
+	 }
+	 ]
+	}
+    ]
+   },
+     {"name": "U.S. Air Force",
+    "children": [ 
+	{"name": "U.S. Air Force Chief of Staff / Air Staff", "value": 100}, 
+	{"name": "U.S. Air Force Global Strike Command",
+	 "children": [ 
+	 {"name": "U.S. Air Force Global Strike Command (AFGSC), 509th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Global Strike Command (AFGSC), 90th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Global Strike Command (AFGSC), 341st Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Global Strike Command (AFGSC), 377th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Global Strike Command (AFGSC), 2nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Global Strike Command (AFGSC), 5th Contracting Squadron", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Air Force Air Education and Training Command",
+	 "children": [ 
+	 {"name": "U.S. Air Force AETC, 56th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 82nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 902nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 802nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 97th Contracting Flight", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 81st Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 17th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 502nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 14th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, Vance AFB Contracting", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 42nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 47th Contracting Flight", "value": 100}, 
+	 {"name": "U.S. Air Force Security Assistance Training Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force AETC, 314th Contracting Squadron", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Air Force Chaplain Corps", "value": 100}, 
+	{"name": "Office of the Secretary of the Air Force / U.S. Air Force Headquarters",
+	 "children": [ 
+	 {"name": "U.S. Air Force District of Washington", "value": 100}, 
+	 {"name": "U.S. Air Force Personnel Center", "value": 100}, 
+	 {"name": "AFWERX", "value": 100}, 
+	 {"name": "Assistant Secretary of the Air Force (Acquisition)",
+	  "children": [ 
+	  {"name": "U.S. Air Force PEO Rapid Capabilities", "value": 100}, 
+	  {"name": "U.S. Air Force PEO Combat and Mission Support", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force Academy",
+	  "children": [ 
+	  {"name": "U.S. Air Force 10th Air Base Wing", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force Information Protection Directorate", "value": 100}, 
+	 {"name": "U.S. Air Force Petroleum Office", "value": 100}, 
+	 {"name": "U.S. Air Force Operational Test and Evaluation Center", "value": 100},
+	 {"name": "U.S. Air Force Weather Agency", "value": 100},
+	 {"name": "Assistant Secretary of the Air Force (Financial Management and Comptroller)",
+	  "children": [ 
+	  {"name": "U.S. Air Force Cost Analysis Agency", "value": 100}
+	  ]
+	 }, 
+	 {"name": "Air Force Services Agency", "value": 100},
+	 {"name": "U.S. Air Force National Air and Space Intelligence Center", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Air Force Air Combat Command",
+	 "children": [ 
+	 {"name": "U.S. Air Force Warfare Center",
+	  "children": [ 
+	  {"name": "U.S. Air Force ACC, 505th Command and Control Wing", "value": 100}, 
+	  {"name": "U.S. Air Force ACC, 99th Contracting Squadron", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force ACC, 12th Air Force", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 23rd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, Acquisition Management and Integration Center", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 28th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 4th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 7th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 20th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 355th Fighter Wing", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 49th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Cyberspace Capabilities Center", "value": 100}, 
+	 {"name": "Sixteenth Air Force (Air Forces Cyber)",
+	  "children": [ 
+	  {"name": "U.S. Air Force 319th Contracting Squadron", "value": 100}, 
+	  {"name": "U.S. Air Force 55th Contracting Squadron", "value": 100}, 
+	  {"name": "U.S. Air Force 9th Contracting Squadron", "value": 100}, 
+	  {"name": "U.S. Air Force Technical Applications Center", "value": 100}, 
+	  {"name": "U.S. Air Force 624th Operations Center", "value": 100}, 
+	  {"name": "U.S. Air Force 688th Cyberspace Wing", "value": 100}, 
+	  {"name": "U.S. Air Force 67th Cyberspace Wing", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force ACC, 325th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 366th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force ACC, 633rd Contracting Squadron", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Air Force Air Mobility Command",
+	 "children": [ 
+	 {"name": "U.S. Air Force Air Mobility Command, 6th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 60th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 628th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 62nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 22nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 437th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 89th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 92nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 436th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 43rd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Air Mobility Command, 305th Contracting Squadron", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Air Force Materiel Command",
+	 "children": [ 
+	 {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), U.S. Air Force Sustainment Center",
+	  "children": [ 
+	  {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), Ogden Air Logistics Complex", "value": 100}, 
+	  {"name": "U.S. Air Force Oklahoma City Air Logistics Center", "value": 100}, 
+	  {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), Warner Robins Air Logistics Complex", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force Life Cycle Management Center",
+	  "children": [ 
+	  {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), Hanscom AFB",
+	   "children": [ 
+	   {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), 554th Electronic Systems Wing", "value": 100}, 
+	   {"name": "U.S. Air Force Life Cycle Management Center, Operations and Sustainment Systems Group", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force, 88th Air Base Wing", "value": 100}, 
+	  {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), Air Armament Center", "value": 100}, 
+	  {"name": "U.S. Air Force 650th Aeronautical Systems Squadron", "value": 100}, 
+	  {"name": "U.S. Air Force 311th Human Systems Wing", "value": 100}, 
+	  {"name": "U.S. Air Force 677th Aeronautical Systems Group", "value": 100},
+	  {"name": "U.S. Air Force Life Cycle Management Center (AFLCMC), Propulsion Directorate", "value": 100}, 
+	  {"name": "U.S. Air Force Security Assistance and Cooperation Directorate", "value": 100}
+	  ]
+	 },
+	 {"name": "U.S. Air Force Test Center",
+	  "children": [ 
+	  {"name": "U.S. Air Force Test Center, Holloman AFB", "value": 100}, 
+	  {"name": "U.S. Air Force 96th Test Wing", "value": 100}, 
+	  {"name": "U.S. Air Force Arnold Engineering Development Complex", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force Research Laboratory",
+	  "children": [ 
+	  {"name": "U.S. Air Force Research Laboratory - Materials and Manufacturing Directorate",
+	   "children": [ 
+	   {"name": "Survivability & Sensor Materials Division  ", "value": 100}, 
+	   {"name": "Nonmetallic Materials Division  ", "value": 100}, 
+	   {"name": "Integration and Operations", "value": 100}, 
+	   {"name": "Unknown", "value": 100}, 
+	   {"name": "Manufacturing and Industrial Technologies Division  ", "value": 100}, 
+	   {"name": "Other", "value": 100}, 
+	   {"name": "Metals, Ceramics, & NDE", "value": 100}, 
+	   {"name": "Systems Support Division  ", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Office of Scientific Research",
+	   "children": [ 
+	   {"name": "International Office North", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - Small Business Office", "value": 100}, 
+	  {"name": "U.S. Air Force Research Laboratory - Directed Energy Directorate",
+	   "children": [ 
+	   {"name": "Mission Planning and Support Division  ", "value": 100}, 
+	   {"name": "High Power Microwave Division", "value": 100}, 
+	   {"name": "Directed Energy", "value": 100}, 
+	   {"name": "Laser Division", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - 711th Human Performance Wing",
+	   "children": [ 
+	   {"name": "Warfighter Readiness Research", "value": 100}, 
+	   {"name": "Human-Centered ISR", "value": 100}, 
+	   {"name": "Warfighter Interface", "value": 100}, 
+	   {"name": "Biosciences and Protection", "value": 100}, 
+	   {"name": "Bioeffects", "value": 100}, 
+	   {"name": "Human Effectiveness", "value": 100}, 
+	   {"name": "Human Systems Integration", "value": 100}, 
+	   {"name": "Preventive Medicine", "value": 100}, 
+	   {"name": "Other HPW", "value": 100}
+	   ]
+	  }, 
+	  {"name": "Other AFRL",
+	   "children": [ 
+	   {"name": "Aerospace Propulsion", "value": 100}, 
+	   {"name": "Integration and Operations Directorate", "value": 100}, 
+	   {"name": "Energy/Power/Thermal Division", "value": 100}, 
+	   {"name": "Combustion Branch", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - Sensors Directorate",
+	   "children": [ 
+	   {"name": "Layered Sensing Exploitation Division  ", "value": 100}, 
+	   {"name": "Systems Technology Office", "value": 100}, 
+	   {"name": "Sensors Plans and Advanced Programs", "value": 100}, 
+	   {"name": "Financial Management Division  ", "value": 100}, 
+	   {"name": "Electromagnetics Technology Division", "value": 100}, 
+	   {"name": "Spectrum Warfare Division  ", "value": 100}, 
+	   {"name": "Aerospace Components & Subsystems Technology Division  ", "value": 100}, 
+	   {"name": "RF Sensor Technology Division", "value": 100}, 
+	   {"name": "Integrations & Operations Division  ", "value": 100}, 
+	   {"name": "Multispectral Sensing & Detection Division  ", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - Aerospace Systems Directorate",
+	   "children": [ 
+	   {"name": "Integration and Operations Division", "value": 100}, 
+	   {"name": "Rocket Propulsion Division", "value": 100}, 
+	   {"name": "Power and Control Division  ", "value": 100}, 
+	   {"name": "Wright Site Support", "value": 100}, 
+	   {"name": "U.S. Air Force Research Laboratory, Edwards Research Site", "value": 100}, 
+	   {"name": "Turbine Engine Division", "value": 100}, 
+	   {"name": "Aerospace Vehicles Division  ", "value": 100}, 
+	   {"name": "Other Aerospace Systems", "value": 100}, 
+	   {"name": "High Speed Systems Division", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - Space Vehicles Directorate",
+	   "children": [ 
+	   {"name": "Battlespace Environment Division  ", "value": 100}, 
+	   {"name": "Other Space Vehicles", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - Information Directorate",
+	   "children": [ 
+	   {"name": "Special Programs Division  ", "value": 100}, 
+	   {"name": "Computing & Communications Division  ", "value": 100}, 
+	   {"name": "Other Information Directorate", "value": 100}, 
+	   {"name": "Information Systems Division", "value": 100}, 
+	   {"name": "Information Exploitation & Operations Division", "value": 100}, 
+	   {"name": "Integration & Operations Division", "value": 100}, 
+	   {"name": "Information Handling", "value": 100}, 
+	   {"name": "Information Intelligence Systems and Analysis Division", "value": 100}, 
+	   {"name": "Strategic Planning & Integration Division", "value": 100}
+	   ]
+	  }, 
+	  {"name": "U.S. Air Force Research Laboratory - Munitions Directorate", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force Installation and Mission Support Center",
+	  "children": [ 
+	  {"name": "U.S. Air Force Installation Contracting Center", "value": 100}, 
+	  {"name": "U.S. Air Force Civil Engineer Center", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force San Antonio Air Logistics Center", "value": 100}, 
+	 {"name": "U.S. Air Force Global Logistics Support Center", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Space Force",
+	 "children": [ 
+	 {"name": "U.S. Space Force, 460th Space Wing", "value": 100}, 
+	 {"name": "U.S. Space Force, 45th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Space Force, 30th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Space Force, 21st Contracting Squadron", "value": 100}, 
+	 {"name": "Space Rapid Capabilities Office", "value": 100}, 
+	 {"name": "U.S. Space Force, Space and Missile Systems Center (SMC)/PEO Space Systems",
+	  "children": [ 
+	  {"name": "U.S. Space Force, SMC/PEO Space Systems, Launch Enterprise Directorate", "value": 100}, 
+	  {"name": "U.S. Space Force, 61st Air Base Group", "value": 100}, 
+	  {"name": "U.S. Space Force, Space and Missile Systems Center (SMC)/PEO Space Systems, Advanced Systems and Development Directorate", "value": 100}, 
+	  {"name": "U.S. Space Force (USSF), SMC / PEO Space Systems, Space Superiority Systems Directorate", "value": 100}, 
+	  {"name": "U.S. Space Force, SMC/PEO Space Systems, Global Positioning Systems Directorate", "value": 100}, 
+	  {"name": "U.S. Space Force, SMC/PEO Space Systems, Remote Sensing Directorate", "value": 100}, 
+	  {"name": "U.S. Space Force, SMC/PEO Space Systems, Range and Network Division", "value": 100}, 
+	  {"name": "U.S. Space Force, SMC/PEO Space Systems, MILSATCOM Systems Directorate", "value": 100}, 
+	  {"name": "U.S. Space Force, SMC/PEO Space Systems, Space Logistics Directorate", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Space Force, 20th Space Control Squadron", "value": 100}, 
+	 {"name": "U.S. Space Force, 50th Contracting Squadron", "value": 100}
+	 ]
+	}, 
+	{"name": "Headquarters, U.S. Air Force Reserve Command",
+	 "children": [ 
+	 {"name": "22nd Air Force",
+	  "children": [ 
+	  {"name": "Minneapolis-St. Paul Air Reserve Station", "value": 100}, 
+	  {"name": "U.S. Air Force Reserve Command, 94th Contracting Flight", "value": 100}, 
+	  {"name": "U.S. Air Force Reserve 934th Airlift Wing", "value": 100}
+	  ]
+	 }, 
+	 {"name": "U.S. Air Force Reserve Command, 911th Contracting Flight", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 301st Contracting Flight", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 910th Contracting Flight", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 914th Airlift Wing", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 439th Contracting Flight", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 452nd Operational Contracting Office", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 482nd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Air Force Reserve Command, 434th Operational Contracting Office", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Pacific Air Forces",
+	 "children": [ 
+	 {"name": "U.S. Pacific Air Forces, 354th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Pacific Air Forces, 673rd Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Pacific Air Forces, 15th Contracting Squadron", "value": 100}, 
+	 {"name": "U.S. Pacific Air Forces, 36th Contracting Squadron", "value": 100}
+	 ]
+	}, 
+	{"name": "U.S. Air Forces Central Command",
+	 "children": [ 
+	 {"name": "U.S. Air Force 332nd Air Expeditionary Wing", "value": 100}
+	 ]
+	}
+	]
+   },
+   {"name": "Department of the Navy",
+	 "children": [
+      {"name": "Secretary of the Navy (SECNAV)",
+	  "children": [
+       {"name": "Navy Service Acq Executive (ASN(RD&A)",
+	   "children": [
+	   	{"name": "Office of Naval Research (ONR)",
+	    "children": [
+		 {"name": "Naval Research Laboratory (NRL)", "value": 3938}
+		 ]
+		},
+		{"name": "Naval Air Systems Command (NAVAIR)", "value": 3938},
+		{"name": "Naval Sea Systems Command (NAVSEA)", "value": 3938},
+		{"name": "Naval Information Warfare Systems Command (NAVWAR)", "value": 3938},
+		{"name": "Marine Corp Systems Command (MARCOR SYSCOM)", "value": 3938},
+		{"name": "Naval Supply Systems Command (NAVSUP)", "value": 3938},
+		{"name": "Naval Facilities Engineering Command (NAVFAC)", "value": 3938},
+	    {"name": "Navy PEOs",
+		"children": [
+	     {"name": "JSF PEO", "value": 3938},
+		 {"name": "C4I PEO", "value": 3938},
+		 {"name": "Ships PEO", "value": 3938},
+		 {"name": "Tactical Air", "value": 3938},
+		 {"name": "Submarines PEO", "value": 3938},
+		 {"name": "Land Systems PEO", "value": 3938},
+		 {"name": "Space Systems PEO", "value": 3938},
+		 {"name": "Aircraft Carriers PEO", "value": 3938},
+		 {"name": "Enterprise Info Systems PEO", "value": 3938},
+		 {"name": "Integrated Warfare Systems PEO", "value": 3938},
+		 {"name": "Air ASW Assult & Special Msn PEO", "value": 3938},
+		 {"name": "Unmanned & Small Combatants PEO", "value": 3938},
+		 {"name": "Unmanned Aviation & Strike Weapons PEO", "value": 3938}
+		 ]
+		}
+		]
+	   }
+	   ]
+	  },
+      {"name": "Navy Chief of Staff", "value": 6714},
+      {"name": "Navy Commands", 
+	  "children": [
+	   {"name": "Fleet Forces Command (USFF)", "value": 3938},
+       {"name": "Fleet Cyber Command (US 10th FLT)", "value": 3812},
+       {"name": "Naval Forces Europe-Africa (US 6th FLT)", "value": 6714},
+	   {"name": "Naval Forces Central Command (US 5th FLT)", "value": 6714},
+	   {"name": "Naval Forces Southern Command (US 4th FLT)", "value": 6714},
+	   {"name": "Pacific Fleet (US 7th FLT)", "value": 6714},
+	   {"name": "Naval Special Warfare Command", "value": 6714},
+	   {"name": "Military Sealift Command", "value": 6714}
+	   ]
+	   },
+	   {"name": "Commandant of Marine Corps", 
+	  "children": [
+	   {"name": "Marine Corps Forces Command (MARFORCOM)", "value": 3938},
+       {"name": "Marine Corps Cyberspace Command (MARFORCYBER)", "value": 3812},
+       {"name": "Marine Corps Forces, Special Ops Command (MARFORSOC)", "value": 6714},
+	   {"name": "Marine Corps Forces, Reserve (MARFORRES)", "value": 6714}
+	   ]
+	   }
+	 ]
+    }
+   ]
+  }
