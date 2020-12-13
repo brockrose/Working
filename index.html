@@ -1,210 +1,750 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-
-#container {
-    position: relative;
-}
-
-#scroll-container {
-    height: 500px;
-    overflow-y: scroll;
-}
-
-#minimap {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: crosshair;
-}
-
-.slider-rect {
-    fill: #000;
-    opacity: 0.1;
-    cursor: pointer;
-}
-
-#minimap:active .slider-rect {
-    opacity: 0.05;
-    cursor: move;
+<style type="text/css">
+.node {
+  cursor: pointer;
 }
 
 .node circle {
-    fill: #999;
-    cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }
 
 .node text {
-    font: 10px sans-serif;
-    text-anchor: start;
-}
-
-.node--internal circle {
-    fill: #555;
-}
-
-.node--internal text {
-    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
-    text-anchor: end;
+  font: 10px sans-serif;
+  stroke: none;
+  fill: lightgray;
 }
 
 .link {
-    fill: none;
-    stroke: #555;
-    stroke-opacity: 0.4;
-    stroke-width: 1.5px;
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+svg {
+  background-color: #20262e;
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
 </style>
-<div id="container">
-    <div id="scroll-container"><svg></svg></div>
-    <div id="minimap"><svg></svg></div>
-</div>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script>
-
-var scrollContainer = document.getElementById('scroll-container'),
-    width = 960 - 130, // width - minimap width
-    height = 2000,
-    scrollHeight = 500,
-    minimapK = 6,
-    root;
-
-var drag = d3.drag()
-    .on('start drag', function() { 
-        scrollContainer.scrollTop = d3.event.y * minimapK - scrollHeight / 2;
-    });
-
-var svg0 = d3.select(scrollContainer)
-    .on('scroll', function(d) {
-        slider.attr('y', this.scrollTop);
-    })
-    .select('svg')
-    .attr('viewBox', [0, 0, width, height].join(' '))
-    .attr('width', width)
-    .attr('height', height);
-
-svg0.append('g').attr('transform', 'translate(40,0)');
-
-var svg1 = d3.select('#minimap > svg')
-    .attr('viewBox', [0, 0, width, height].join(' '))
-    .attr('preserveAspectRatio', 'xMidYMid meet')
-    .attr('width', width / minimapK)
-    .attr('height', height / minimapK)
-    .call(drag);
-
-svg1.append('g').attr('transform', 'translate(40,0)');
-
-var slider = svg1.append('rect')
-    .attr('class', 'slider-rect')
-    .attr('width', width)
-    .attr('height', scrollHeight);
-
-
-d3.csv("flare.csv", function(error, data) {
-    if (error) throw error;
-
-    var stratify = d3.stratify().parentId(function (d) {
-        return d.id.substring(0, d.id.lastIndexOf("."));
-    });
-
-    root = stratify(data).sort(function (a, b) {
-        return (a.height - b.height) || a.id.localeCompare(b.id);
-    });
-
-    updateAll();
-});
-
-function updateAll(){
-    update(svg0);
-    update(svg1);
-}
-
-function update(svg) {
-    var g = svg.select('g');
-
-    var tree = d3.tree()
-        .size([height, width - 160]);
-
-    var enterTransition = d3.transition().duration(500).delay(750);
-    var updateTransition = d3.transition().duration(1000);
-    var exitTransition = d3.transition().duration(500);
-
-    var linkHorizontal = d3.linkHorizontal()
-        .x(function (d) { return d.y; })
-        .y(function (d) { return d.x; });
-
-    var link = g.selectAll('.link')
-        .data(tree(root).links(), function(d) { return d.source.id + '-' + d.target.id; });
-
-    link.transition(updateTransition)
-        .attr('d', linkHorizontal);
-    
-    link.enter().append('path')
-        .attr('class', 'link')
-        .attr('d', linkHorizontal)
-        .attr('opacity', 0)
-        .transition(enterTransition)
-        .attr('opacity', 1);
-
-    link.exit()
-        .transition(exitTransition)
-        .attr('opacity', 0)
-        .remove();
-
-    var node = g.selectAll('.node')
-        .data(root.descendants(), function(d) { return d.id; });
-
-    node.transition(updateTransition)
-        .attr('class', function (d) {
-            return 'node ' + (d.children ? 'node--internal' : 'node--leaf');
-        })
-        .attr('transform', function (d) {
-            return 'translate(' + d.y + ',' + d.x + ')';
-        })
-        .each(function(d) {
-            var nodeGroup = d3.select(this);
-            nodeGroup.select('text')
-                .attr('x', d.children ? -8 : 8)
-                .text(d.id.substring(d.id.lastIndexOf('.') + 1));
-        });
-    
-    node.enter().append('g')
-        .each(function(d) {
-            var nodeGroup = d3.select(this);
-            nodeGroup.append('circle')
-                .attr('r', 2.5)
-                .on('click', onClick);
-            nodeGroup.append('text')
-                .attr('dy', 3)
-                .attr('x', d.children ? -8 : 8)
-                .text(d.id.substring(d.id.lastIndexOf('.') + 1));
-        })
-        .attr('class', function (d) {
-            return 'node ' + (d.children ? 'node--internal' : 'node--leaf');
-        })
-        .attr('transform', function (d) {
-            return 'translate(' + d.y + ',' + d.x + ')';
-        })
-        .attr('opacity', 0)
-        .transition(enterTransition)
-        .attr('opacity', 1);
-
-    node.exit()
-        .transition(exitTransition)
-        .attr('opacity', 0)
-        .remove();
-}
-
-function onClick(d) {
-    if (d.children) {
-        d._children = d.children;
-        d.children = null;
-    } else {
-        d.children = d._children;
-        d._children = null;
+const flare = {
+"name": "Department of Defense (DoD)",
+ "children": [
+  {"name": "Office of Secretary of Defense (SecDef)",
+   "children": [
+   {"name": "Department of the Air Force",
+	 "children": [
+      {"name": "U.S. Space Forces (USSF)",
+	   "children": [
+	    {"name": "Chief of Space Operations (CSO)", "value": 3938},
+		{"name": "Space Operations Command (SPOC, Former 14th Air Force)", "value": 3938},
+	    {"name": "Space & Missile Systems Center (SMC)",
+		 "children": [
+		  {"name": "Portfolio Architect",
+		   "children": [
+		    {"name": "Portfolio Integration Partnership Officer","value": 3938},
+			{"name": "Mission Innovation","value": 3938},
+			{"name": "Mission Integration","value": 3938},
+			{"name": "Sys of Sys Engr","value": 3938},
+			{"name": "Chief Scientist","value": 3938}
+			]
+		  },
+		  {"name": "Enterprise Corps",
+		   "children": [
+		    {"name": "Launch Enterprise Services","value": 3938},
+			{"name": "Cross-Mission Ground and Communications","value": 3938},
+			{"name": "Product Support Enterprise Services","value": 3938}
+			]
+		  },
+		  {"name": "Develop Corps",
+		   "children": [
+		    {"name": "Innovation & Prototyping Programs","value": 3938},
+			{"name": "Pre-Production Programs","value": 3938}
+			]
+		  },
+		  {"name": "Production Corps",
+		   "children": [
+		    {"name": "LEO Division","value": 3938},
+			{"name": "MEO Division","value": 3938},
+			{"name": "GEO Division","value": 3938}
+			]
+		  },
+		  {"name": "Space Systems","value": 3938},
+		  {"name": "Special Programs","value": 3938}
+		   ]
+	      }
+	      ]
+	    },	
+	  {"name": "U.S. Air Force (USAF)",
+	   "children": [
+	    {"name": "Chief of Staff of Air Force (CSAF)", "value": 3938},
+      	{"name": "Vice Chief of Staff of AF",
+	   "children": [
+	    {"name": "AFWERX","value": 3938}  
+		]
+	    },
+	    {"name": "Air Force Materiel Command (AFMC)",
+	    "children": [
+	     {"name": "AF Lifecycle Management Center (AFLCMC)", "value": 3938},
+		 {"name": "AF Sustainment Center (AFSC)", "value": 3938},
+		 {"name": "AF Nuclear Weapons Center (AFNWC)",
+		  "children": [
+		   {"name": "Strategic Systems PEO", "value": 3938}
+		   ]
+		 },
+		 {"name": "AF Test Center (AFTC)", "value": 3938},
+		 {"name": "AF Research Laboratory (AFRL)",
+		  "children": [
+		   {"name": "Sensors (AFRL/RY)", "value": 3938},
+		   {"name": "711th Human Performance Wing (711HPW)", "value": 3938},
+		   {"name": "Space Vehicles (AFRL/RV)", "value": 3938},
+		   {"name": "Aerospace Systems (AFRL/RQ)", "value": 3938},
+		   {"name": "Information (AFRL/RI)", "value": 3938},
+		   {"name": "Materials & Manufacturing (AFRL/RX)", "value": 3938},
+		   {"name": "Directed Energy (AFRL/RD)", "value": 3938},
+		   {"name": "Munitions (AFRL/RW)", "value": 3938},
+		   {"name": "AF Office of Scientific Research", "value": 3938}
+		 ]
+		}
+	   ]
+	  },
+	  {"name": "Secretary of the Air Force (SECAF)",
+	  "children": [
+	   {"name": "Space Acquisition & Integration (SAF/SP)",
+	   "children": [
+	    {"name": "Space Acquisition Council", "value": 3938},
+		{"name": "Space Rapid Capability Office (SpRCO)", "value": 3938}
+		]
+	   },
+       {"name": "Air Force Service Acq Executive (SAF/AQ)",
+	   "children": [
+	    {"name": "Contracting (SAF/AQC)", "value": 3938},
+		{"name": "Logistics and Production Support (SAF/AQD)", "value": 3938},
+		{"name": "Science, Tech and Engineering (SAF/AQR)", "value": 3938},
+		{"name": "Info Dominance (SAF/AQI)", "value": 3938},
+		{"name": "Global Power (SAF/AQP)", "value": 3938},
+		{"name": "Global Reach (SAF/AQQ)", "value": 3938},
+		{"name": "Space Programs (SAF/AQS)", "value": 3938},
+		{"name": "Special Programs (SAF/AQL)", "value": 3938},
+	    {"name": "Air Force PEOs",
+		 "children": [
+	      {"name": "Combat and Mission Support PEO", "value": 3938},
+		  {"name": "Digital PEO", "value": 3938},
+		  {"name": "Tanker PEO", "value": 3938},
+		  {"name": "ISR/SOF", "value": 3938},
+		  {"name": "Armament PEO", "value": 3938},
+		  {"name": "Space Systems PEO", "value": 3938},
+		  {"name": "Strategic Systems PEO", "value": 3938},
+		  {"name": "C3I and Networks PEO", "value": 3938},
+		  {"name": "Agile Combat Support PEO", "value": 3938},
+		  {"name": "Fighters and Bombers PEO", "value": 3938},
+		  {"name": "Mobility and Training Aircraft PEO", "value": 3938},
+		  {"name": "Presidential & Executive Aircraft PEO", "value": 3938},
+		  {"name": "Business and Enterprise PEO", "value": 3938}
+		 ]
+		}
+		]
+	   }
+	   ]
+	  },
+      {"name": "Air Force Chief of Staff", "value": 6714},
+      {"name": "Air Force Commands", 
+	  "children": [
+	   {"name": "Air Combat Command (ACC)", "value": 3938},
+       {"name": "Air Education and Training Command (AETC)", "value": 3812},
+       {"name": "AF Global Strike Command (AFGSC)", "value": 6714},
+	   {"name": "Air Mobility Command (AMC)", "value": 6714},
+	   {"name": "AF Special Operations Command (AFSOC)", "value": 6714},
+	   {"name": "Air Force Reserve Command (AFRC)", "value": 6714},
+	   {"name": "Air National Guard (ANG)", "value": 6714}
+	   ]
+	  }
+	  ]
     }
-    updateAll();
+	]
+},
+    {"name": "Department of the Army",
+     "children": [
+	  {"name": "Headquarters Army", "value": 3812},
+	  {"name": "Army Chief of Staff (CSA)", "value": 6714},
+      {"name": "Secretary of the Army (SECARMY)",
+	  "children": [
+	   {"name": "Army Service Acq Executive (ASA(ALT))",
+	    "children": [
+	     {"name": "Army Futures Command (AFC)",
+		 "children": [
+	      {"name": "Futures & Concepts Center (FCC)", "value": 6714},
+		  {"name": "Combat Capabilities Development Command (CCDC)",
+	       "children": [
+	        {"name": "Army Research Laboratory (ARL)", "value": 6714},
+			{"name": "CCDC Armaments Center", "value": 6714},
+			{"name": "CCDC Aviation & Missile Center (AVMC)", "value": 6714},
+			{"name": "CCDC Chemical Biological Center", "value": 6714},
+			{"name": "CCDC C5ISR Center", "value": 6714},
+			{"name": "CCDC Soldier Center", "value": 6714},
+			{"name": "CCDC Ground Vehicle Sys Center", "value": 6714},
+			{"name": "CCDC Americas", "value": 6714},
+			{"name": "CCDC Atlantic", "value": 6714},
+			{"name": "CCDC Pacific", "value": 6714}
+		    ]
+		  },
+		  {"name": "Combat Systems Directorate (CSD)", "value": 6714},
+		  {"name": "Cross-Functional Teams (CFTs)",
+	       "children": [
+	        {"name": "Network CFT", "value": 6714},
+			{"name": "Soldier Lethality CFT", "value": 6714},
+			{"name": "Future Vertical Lift CFT", "value": 6714},
+			{"name": "Long-range Precision Fire CFT", "value": 6714},
+			{"name": "Next-Gen Combat Vehicle CFT", "value": 6714},
+			{"name": "Air & Missile Defense CFT", "value": 6714},
+			{"name": "Synthetic Training Environment CFT", "value": 6714},
+			{"name": "Assured Positioning, Nav & Timing CFT", "value": 6714}
+		    ]
+		  }
+		  ]
+		 },
+		 {"name": "Army Materiel Command (AMC)",
+		 "children": [
+	      {"name": "Army Contracting Command", "value": 6714},
+		  {"name": "Aviation and Missile Command", "value": 6714},
+		  {"name": "Army Sustainment Command", "value": 6714},
+		  {"name": "Communications and Electronics Command", "value": 6714},
+		  {"name": "Installation Management Command", "value": 6714},
+		  {"name": "Joint Munitions Command", "value": 6714},
+		  {"name": "Medical Research and Materiel Command", "value": 6714},
+		  {"name": "Military Surface Deployment & Distro Command", "value": 6714},
+		  {"name": "Tank-automotive and Armaments Command", "value": 6714},
+		  {"name": "Army Security Assistance Command", "value": 6714}
+		  ]
+		 },
+		 {"name": "Army PEOs",
+		 "children": [
+		  {"name": "Digital PEO", "value": 3938},
+		  {"name": "Tanker PEO", "value": 3938},
+		  {"name": "ISR/SOF", "value": 3938},
+		  {"name": "Armament PEO", "value": 3938},
+		  {"name": "Space Systems PEO", "value": 3938},
+		  {"name": "Strategic Systems PEO", "value": 3938},
+		  {"name": "C3I and Networks PEO", "value": 3938},
+		  {"name": "Agile Combat Support PEO", "value": 3938},
+		  {"name": "Fighters and Bombers PEO", "value": 3938},
+		  {"name": "Mobility and Training Aircraft PEO", "value": 3938},
+		  {"name": "Presidential & Executive Aircraft PEO", "value": 3938},
+		  {"name": "Business and Enterprise PEO", "value": 3938}
+		  ]
+		 }
+		 ]
+	   },
+      {"name": "Army Commands", 
+	  "children": [
+	   {"name": "Army Forces Command (FORSCOM)", "value": 3938},
+       {"name": "Army Training and Doctrine Command (TRADOC)", "value": 3812}
+	   ]
+	  }
+      ]
+     }
+	 ]
+    }, 
+{"name": "Department of the Navy",
+	 "children": [
+      {"name": "Secretary of the Navy (SECNAV)",
+	  "children": [
+       {"name": "Navy Service Acq Executive (ASN(RD&A)",
+	   "children": [
+	   	{"name": "Office of Naval Research (ONR)",
+	    "children": [
+		 {"name": "Naval Research Laboratory (NRL)", "value": 3938}
+		 ]
+		},
+		{"name": "Naval Air Systems Command (NAVAIR)", "value": 3938},
+		{"name": "Naval Sea Systems Command (NAVSEA)", "value": 3938},
+		{"name": "Naval Information Warfare Systems Command (NAVWAR)", "value": 3938},
+		{"name": "Marine Corp Systems Command (MARCOR SYSCOM)", "value": 3938},
+		{"name": "Naval Supply Systems Command (NAVSUP)", "value": 3938},
+		{"name": "Naval Facilities Engineering Command (NAVFAC)", "value": 3938},
+	    {"name": "Navy PEOs",
+		"children": [
+	     {"name": "JSF PEO", "value": 3938},
+		 {"name": "C4I PEO", "value": 3938},
+		 {"name": "Ships PEO", "value": 3938},
+		 {"name": "Tactical Air", "value": 3938},
+		 {"name": "Submarines PEO", "value": 3938},
+		 {"name": "Land Systems PEO", "value": 3938},
+		 {"name": "Space Systems PEO", "value": 3938},
+		 {"name": "Aircraft Carriers PEO", "value": 3938},
+		 {"name": "Enterprise Info Systems PEO", "value": 3938},
+		 {"name": "Integrated Warfare Systems PEO", "value": 3938},
+		 {"name": "Air ASW Assult & Special Msn PEO", "value": 3938},
+		 {"name": "Unmanned & Small Combatants PEO", "value": 3938},
+		 {"name": "Unmanned Aviation & Strike Weapons PEO", "value": 3938}
+		 ]
+		}
+		]
+	   }
+	   ]
+	  },
+      {"name": "Navy Chief of Staff", "value": 6714},
+      {"name": "Navy Commands", 
+	  "children": [
+	   {"name": "Fleet Forces Command (USFF)", "value": 3938},
+       {"name": "Fleet Cyber Command (US 10th FLT)", "value": 3812},
+       {"name": "Naval Forces Europe-Africa (US 6th FLT)", "value": 6714},
+	   {"name": "Naval Forces Central Command (US 5th FLT)", "value": 6714},
+	   {"name": "Naval Forces Southern Command (US 4th FLT)", "value": 6714},
+	   {"name": "Pacific Fleet (US 7th FLT)", "value": 6714},
+	   {"name": "Naval Special Warfare Command", "value": 6714},
+	   {"name": "Military Sealift Command", "value": 6714}
+	   ]
+	   },
+	   {"name": "Commandant of Marine Corps", 
+	  "children": [
+	   {"name": "Marine Corps Forces Command (MARFORCOM)", "value": 3938},
+       {"name": "Marine Corps Cyberspace Command (MARFORCYBER)", "value": 3812},
+       {"name": "Marine Corps Forces, Special Ops Command (MARFORSOC)", "value": 6714},
+	   {"name": "Marine Corps Forces, Reserve (MARFORRES)", "value": 6714}
+	   ]
+	   }
+	 ]
+    },	
+	{"name": "Joint Chiefs of Staff (JCS)",
+     "children": [
+      {"name": "The Joint Chiefs", "value": 3938},
+      {"name": "Join Staff", "value": 3812},
+      {"name": "Joint Requirements Oversight Council (JROC)", 
+	  "children": [
+		{"name": "VCJCS (Chair)", "value": 3938},
+		{"name": "Senior Leader Mil Dept Reps", "value": 3938}
+		]
+	  }
+      ]
+    },
+    {"name": "Combatant Commands",
+     "children": [
+      {"name": "Africa Command", "value": 3938},
+      {"name": "Central Command", "value": 3812},
+      {"name": "Cyber Command", "value": 6714},
+      {"name": "European Command", "value": 743},
+	  {"name": "Indo-Pacific Command", "value": 3938},
+      {"name": "Northern Command", "value": 3812},
+      {"name": "Southern Command", "value": 6714},
+      {"name": "Special Operations Command (SOCOM)",
+	   "children": [
+	    {"name": "Special Operations Command Acquisition Executive (SOF(AT&L))",
+		 "children": [
+		  {"name": "Science & Technology (SOF AT&L - ST)",
+		   "children": [
+		    {"name": "SOFWERX", "value": 6714},
+			{"name": "Joint Acquisition Task Force (JATF) - Hyper-Enabled Operator (HEO)", "value": 6714},
+			{"name": "Comparative Technology Office (SOF(CTO))", "value": 6714}
+			]
+		  },
+		  {"name": "Procurement (SOF(AT&L - K))", "value": 6714},
+		  {"name": "Logistics SOF", "value": 6714},
+		  {"name": "Comptroller SOF", "value": 6714},
+		  {"name": "Agile Acquisition SOF", "value": 6714}
+		  ]
+		}
+	   ]
+	  },
+	  {"name": "Southern Command", "value": 6714},
+	  {"name": "Strategic Command", "value": 3938},
+      {"name": "Transportation Command", "value": 3812}
+     ]
+    },
+    {"name": "Inspector General (IG)","value": 3938},
+    {"name": "Defense Digital Services (DDS)", "value": 3938},
+    {"name": "Operational Test & Evaluation (OSD (OT&E))","value": 3938},
+    {"name": "Cost Assessment & Program Evaluation (OSD (CAPE))","value": 3938},
+    {"name": "Chief Information Officer (OSD (CIO))",
+     "children": [
+      {"name": "Joint Artificial Intelligence Center (JAIC)", "value": 3938},
+      {"name": "C4 & Info Infrastructure Capabilities (CIO(C4&IIC))", "value": 3812},
+      {"name": "Cybersecurity & Security (CIO(CS))", "value": 6714},
+      {"name": "Info Enterprise (CIO(IE))", "value": 743}
+     ]
+    },
+    {"name": "Protecting Critical Tech Task Force (OSD (PCTTF))","value": 3938},
+    {"name": "Office of Under Secretary of Defense Acquistion & Sustainment (OUSD (A&S))",
+     "children": [
+      {"name": "Joint Rapid Acq Cell", "value": 3938},
+	  {"name": "DCMA", "value": 3938},
+      {"name": "DAU", "value": 3812},
+      {"name": "DLA", "value": 6714},
+      {"name": "DTRA", "value": 743}
+     ]
+    },
+    {"name": "Office of Under Secretary of Defense Research & Engineering (OUSD (R&E))",
+     "children": [
+      {"name": "DARPA",
+	   "children": [
+        {"name": "Special Projects Office",
+		 "children": [
+		  {"name": "Adaptive Capabilities Office (ACO)", "value": 3938},
+		  {"name": "Aerospace Projects Office (APO)", "value": 3938}
+		  ]
+		},
+	    {"name": "Defense Sciences Office (DSO)",
+		 "children": [
+		 {"name": "A2P", "value": 3938},
+		 {"name": "Accelerated Molecular Discovery", "value": 3938},
+		 {"name": "ACCESS", "value": 3938},
+		 {"name": "ACDC", "value": 3938},
+		 {"name": "AIRA", "value": 3938},
+		 {"name": "A-Teams", "value": 3938},
+		 {"name": "ATN", "value": 3938},
+		 {"name": "CAML", "value": 3938},
+		 {"name": "CASCADE", "value": 3938},
+		 {"name": "Deep Purple", "value": 3938},
+		 {"name": "Detect", "value": 3938},
+		 {"name": "DRINQS", "value": 3938},
+		 {"name": "EQUiPS", "value": 3938},
+		 {"name": "EXTREME", "value": 3938},
+		 {"name": "Fold FX", "value": 3938},
+		 {"name": "FUN Design", "value": 3938},
+		 {"name": "FunCC", "value": 3938},
+		 {"name": "GRIT", "value": 3938},
+		 {"name": "Ground Truth", "value": 3938},
+		 {"name": "GS3-Polyplexus", "value": 3938},
+		 {"name": "ICONS", "value": 3938},
+		 {"name": "Improv 2", "value": 3938},
+		 {"name": "ITA3", "value": 3938},
+		 {"name": "LogX", "value": 3938},
+		 {"name": "MACH", "value": 3938},
+		 {"name": "Make-It", "value": 3938},
+		 {"name": "MATRIX", "value": 3938},
+		 {"name": "MDP", "value": 3938},
+		 {"name": "Molecular Informatics", "value": 3938},
+		 {"name": "MSDC", "value": 3938},
+		 {"name": "NAC", "value": 3938},
+		 {"name": "NGS2", "value": 3938},
+		 {"name": "NLM", "value": 3938},
+		 {"name": "ONISQ", "value": 3938},
+		 {"name": "PAI", "value": 3938},
+		 {"name": "PROTEUS", "value": 3938},
+		 {"name": "PULSE", "value": 3938},
+		 {"name": "QuSAR", "value": 3938},
+		 {"name": "RadioBio", "value": 3938},
+		 {"name": "REVEAL", "value": 3938},
+		 {"name": "SAIL-ON", "value": 3938},
+		 {"name": "SCORE", "value": 3938},
+		 {"name": "SCOUT", "value": 3938},
+		 {"name": "SEE", "value": 3938},
+		 {"name": "SI3-CMD", "value": 3938},
+		 {"name": "SIGMA", "value": 3938},
+		 {"name": "SIGMA+", "value": 3938},
+		 {"name": "SIMPLEX", "value": 3938},
+		 {"name": "TAILOR", "value": 3938},
+		 {"name": "TEE", "value": 3938},
+		 {"name": "TFF", "value": 3938},
+		 {"name": "TRADES", "value": 3938},
+		 {"name": "uBRAIN", "value": 3938},
+		 {"name": "UGB", "value": 3938},
+		 {"name": "VIP", "value": 3938},
+		 {"name": "Xsolids", "value": 3938}
+		 ]
+		},
+        {"name": "Information Innovation Office (I2O)", "value": 3812},
+        {"name": "Biological Technologies Office (BTO)", "value": 6714},
+        {"name": "Microsystems Technologies (MTO)", "value": 743},
+		{"name": "Strategic Technology Office (STO)", "value": 743},
+		{"name": "Tactical Technology Office (TTO)", "value": 743}
+       ]
+	  },
+      {"name": "Missile Defense Agency (MDA)", "value": 3812},
+	  {"name": "Space Development Agency (SDA)",
+	   "children": [
+	    {"name": "Battle Management Layer",
+		 "children": [
+		  {"name": "Navigation Layer",
+		   "children": [
+		    {"name": "Custody Layer", "value": 3812},
+			{"name": "Deterrence Layer", "value": 3812},
+			{"name": "Space Transport Layer", "value": 3812},
+			{"name": "Support Layer", "value": 3812},
+			{"name": "Tracking Layer", "value": 3812}
+			]
+		  },
+		  {"name": "Warfighter Council", "value": 3812}
+		 ]
+		}
+	   ]
+	  },
+      {"name": "DTIC", "value": 6714},
+	  {"name": "Defense Innovation Marketplace", "value": 6714},
+	  {"name": "Defense Innovation Unit (DIU)", "value": 6714},
+	  {"name": "Defense Innovation Board", "value": 6714},
+	  {"name": "Defense Science Board", "value": 6714},
+	  {"name": "Strategic Capabilities Office (SCO)", "value": 6714},
+	  {"name": "Artificial Intelligence / Machine Learning", "value": 6714},
+	  {"name": "DDRE Modernization",
+	   "children": [
+        {"name": "DDRE (M) FNC3", "value": 3938},
+	    {"name": "DDRE (M) Cyber", "value": 3938},
+        {"name": "DDRE (M) Space", "value": 3812},
+        {"name": "DDRE (M) Biotechnology", "value": 6714},
+        {"name": "DDRE (M) Directed Energy", "value": 743},
+		{"name": "DDRE (M) Microelectronics", "value": 743},
+		{"name": "DDRE (M) Quantum Science", "value": 743}
+       ]
+	  }, 
+	  {"name": "DDRE Research & Technology",
+	   "children": [
+	   {"name": "DD(RT&L) Research, Technology & Laboratories",
+	    "children": [
+         {"name": "University Affiliated Research Centers", "value": 3938},
+	     {"name": "Federally Funded R&D Centers", "value": 3938},
+         {"name": "DoD Laboratory Enterprise", "value": 3812},
+         {"name": "Science and Technology (RT&L (S&T))", "value": 6714},
+         {"name": "Business and External Engagements", "value": 743}
+        ]
+	   },
+	   {"name": "DD(STP&E) Strategic Tech Protection & Exploration",
+	    "children": [
+        {"name": "Resilient Systems", "value": 3938},
+	    {"name": "Technology Manufacturing Industrial Base", "value": 3938},
+        {"name": "Maintaining Technology Advantage", "value": 3812}
+       ]
+	  }
+     ]
+    }
+	]
+	},
+    {"name": "Office of Under Secretary of Defense Comptroller (OUSD(C))",
+     "children": [
+      {"name": "DCAA", "value": 3938},
+      {"name": "DFAS", "value": 743}
+     ]
+    },
+    {"name": "Office of Under Secretary of Defense of Policy (OUSD (P))",
+     "children": [
+      {"name": "Special Ops/Low Intensity Conflict (OUSD(P)(SO/LIC))", "value": 3938},
+      {"name": "International Security Affairs", "value": 3812},
+      {"name": "Strategy, Plans & Capabilities", "value": 6714},
+      {"name": "Homeland Defense and Global Security", "value": 6714},
+	  {"name": "Nuclear & Defense Policy", "value": 6714},
+	  {"name": "Security Cooperation", "value": 6714},
+	  {"name": "Space Policy", "value": 6714},
+	  {"name": "Cyber Policy", "value": 6714},
+	  {"name": "Defense Security Cooperation Agency (DSCA)", "value": 743}
+     ]
+    },
+    {"name": "Office of Under Secretary of Intel & Security (OUSD(I&S))", "value": 743}
+	]
+	}
+]
 }
 
+
+const margin = {
+    top: 20,
+    right: 120,
+    bottom: 20,
+    left: 50
+  },
+  width = 960 - margin.right - margin.left,
+  height = 800 - margin.top - margin.bottom,
+  duration = 750,
+  root = d3.hierarchy(flare)
+
+root.x0 = height / 2
+root.y0 = 0
+
+let i = 0
+
+const svg = d3
+  .select("body")
+  .append("svg")
+
+var area = svg.node().getBoundingClientRect()
+
+const tree = d3
+  .tree()
+  .size([area.height, area.width])
+  .nodeSize([25, 1])
+
+const diagonal = d3
+  .linkHorizontal()
+  .x(d => d.y)
+  .y(d => d.x)
+
+const g = svg
+  .append("g")
+  .attr("transform", "translate(" + 20 + "," + area.height / 2 + ")")
+
+//specify what to do when zoom event listener is triggered 
+const zoom_actions = () => {
+  let t = d3.event.transform
+  //First zoom event ignores the transform applied when appending the group to the svg
+  console.log(g.attr("transform"), d3.event.transform)
+  g.attr("transform", t)
+}
+
+//create zoom handler 
+const zoom_handler = d3
+  .zoom()
+  .on("zoom", zoom_actions)
+
+//Add zoom behaviour to the svg element 
+//same as svg.call(zoom_handler); 
+zoom_handler(svg)
+
+// Collapses the whole tree recursively
+const collapse = d => {
+  if (d.children) {
+    d._children = d.children
+    d._children.forEach(collapse)
+    d.children = null
+  }
+}
+
+// Toggle children on click
+const click = d => {
+  if (d.children) {
+    d._children = d.children
+    d.children = null
+  } else {
+    d.children = d._children
+    d._children = null
+  }
+  update(d)
+}
+
+
+const update = (source) => {
+  const c = 10
+  const o = {
+    x: source.x0,
+    y: source.y0
+  }
+
+  // Compute the new tree layout.
+  const base = tree(root)
+  const nodes = base.descendants() //.reverse()
+  const links = base.links()
+
+  // Normalize for fixed-depth.
+  nodes.forEach(d => d.y = d.depth * 250)
+
+  // Update the nodes…
+  const node = g
+    .selectAll("g.node")
+    .data(nodes, d => d.id || (d.id = ++i))
+
+  // Enter any new nodes at the parent's previous position.
+  const nodeEnter = node
+    .enter()
+    .append("g")
+    .attr("class", "node")
+    .on("click", click)
+    // This line gave me the onEnter transition in V3
+    /* .attr("transform", d => "translate(" + o.y + "," + o.x + ")") */
+    .attr("transform", d => "translate(" + d.y + "," + d.x + ")")
+
+  nodeEnter
+    .append("circle")
+    .attr("r", 5)
+    .style("fill", d => d._children ? "lightsteelblue" : "#fff")
+
+  nodeEnter
+    .append("text")
+    .attr("x", d => d.children || d._children ? -10 : 10)
+    .attr("y", d => d.children ? c : 0)
+    .attr("dy", ".35em")
+    // Don't why this was here, haven't needed it
+    /* .attr("text-anchor", d => d.children || d._children ? "end" : "start") */
+    .text(d => d.data.name)
+
+  // Transition exiting nodes to the parent's new position.
+  const nodeExit = node
+    .exit()
+    .transition()
+    .duration(duration)
+    .attr("transform", d => "translate(" + o.y + "," + o.x + ")")
+    .remove()
+
+  nodeExit
+    .select("circle")
+    .attr("r", 1e-6)
+
+  nodeExit
+    .select("text")
+    .style("fill-opacity", 1e-6)
+
+  // Transition nodes to their new position.
+  const nodeUpdate = node
+    .transition()
+    .duration(duration)
+    .attr("transform", d => "translate(" + d.y + "," + d.x + ")")
+
+  nodeUpdate
+    .select("circle")
+    .attr("r", 5)
+    .style("fill", d => d._children ? "lightsteelblue" : "#fff")
+
+  nodeUpdate
+    .select("text")
+    .attr("x", d => d.children ? -10 : 10)
+    .attr("y", d => d.children ? c : 0)
+    .style("fill-opacity", 1)
+
+  // Update the links…
+  const link = g
+    .selectAll("path.link")
+    .data(links, d => d.target.id)
+
+  // Enter any new links at the parent's previous position.
+  link
+    .enter()
+    .insert("path", "g")
+    .attr("class", "link")
+    .attr("d", d => diagonal(d)
+      // This block gave me the onEnter transition in V3
+      /* diagonal({
+        source: o,
+        target: o
+      }) */
+    )
+
+  // Transition links to their new position.
+  link
+    .transition()
+    .duration(duration)
+    .attr("d", diagonal)
+
+  // Transition exiting nodes to the parent's new position.
+  link
+    .exit()
+    .transition()
+    .duration(duration)
+    .attr("d", d =>
+      diagonal({
+        source: o,
+        target: o
+      }))
+    .remove()
+
+  // Stash the old positions for transition.
+  // Never really figured this one out
+  nodes.forEach((d) => {
+    d.x0 = d.x
+    d.y0 = d.y
+  })
+}
+
+// Should uncomment, leaves only expanded up to depth = 1
+//root.children.forEach(collapse)
+// Builds the whole thing, source is root
+update(root)
 </script>
